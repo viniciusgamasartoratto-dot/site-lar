@@ -52,7 +52,6 @@ export default function ProgramPage() {
 <section className="section">
         <div className="container section-heading-row"><div><p className="eyebrow">Galeria institucional</p><h2>Imagens do ambiente de cuidado do Lar.</h2></div></div>
         <div className="container program-gallery">
-          <figure><img src="/images/sobre-criancas.jpg" alt="Imagem institucional com criança em ambiente colorido" width="900" height="700" loading="lazy" /></figure>
           <figure><img src="/images/sede-jogos.jpeg" alt="Espaço de jogos da sede" width="720" height="540" loading="lazy" /></figure>
           <figure><img src="/images/sede-convivencia.jpeg" alt="Salão de convivência da sede" width="720" height="540" loading="lazy" /></figure>
         </div>

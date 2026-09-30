@@ -41,3 +41,11 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
 .gallery-preview figure,.gallery-preview .gallery-featured,.gallery-preview figure:last-child,.structure-gallery figure:nth-child(n) { grid-column:auto; grid-row:auto; }
 .gallery-preview img,.structure-gallery img { width:100%; height:auto; aspect-ratio:4/3; object-fit:contain; }
 @media(max-width:760px) { .gallery-preview,.structure-gallery { grid-template-columns:1fr; grid-template-rows:auto; } }
+
+/* Galeria do programa com somente as duas fotos atuais da sede. */
+.program-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:360px; }
+.program-gallery figure:first-child { grid-column:auto; grid-row:auto; }
+@media(max-width:760px) {
+  .program-gallery { grid-template-columns:1fr; grid-template-rows:repeat(2,260px); }
+  .program-gallery figure:first-child { grid-column:auto; grid-row:auto; }
+}

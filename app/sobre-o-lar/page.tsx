@@ -18,7 +18,7 @@ const timeline = [
 export default function AboutPage() {
   return (
     <>
-      <PageHero eyebrow="Sobre o Lar" title="Há mais de sete décadas, uma casa de cuidado e proteção." description="O Lar Itatibense da Criança é uma organização privada, sem fins lucrativos e de utilidade pública, dedicada ao acolhimento institucional de crianças e adolescentes." tone="cream" image={{ src: "/images/sobre-criancas.jpg", alt: "Criança observando um mural colorido em imagem institucional do Lar" }} />
+      <PageHero eyebrow="Sobre o Lar" title="Há mais de sete décadas, uma casa de cuidado e proteção." description="O Lar Itatibense da Criança é uma organização privada, sem fins lucrativos e de utilidade pública, dedicada ao acolhimento institucional de crianças e adolescentes." tone="cream" image={{ src: "/images/sede-jogos.jpeg", alt: "Espaço de jogos da sede do Lar Itatibense" }} />
 
       <section className="section">
         <div className="container content-grid">
