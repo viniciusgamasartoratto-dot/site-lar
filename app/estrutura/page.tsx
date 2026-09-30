@@ -5,7 +5,7 @@ import { structureImages } from "../data/site";
 
 export const metadata: Metadata = {
   title: "Estrutura",
-  description: "Conheça a sede administrativa e do Programa Crê-Ser e as três casas de acolhimento do Lar Itatibense, cujas localizações são preservadas.",
+  description: "Conheça a sede administrativa e do Programa Crê-Ser e as três casas de acolhimento do Lar Itatibense.",
 };
 
 export default function StructurePage() {
@@ -15,7 +15,7 @@ export default function StructurePage() {
       <section className="section">
         <div className="container split-heading">
           <div><p className="eyebrow">Sede administrativa e Programa Crê-Ser</p><h2>O prédio da sede tem uma nova função.</h2></div>
-          <div className="lead-copy"><p>O prédio no Jardim Carlos Borella, em Itatiba, abriga atualmente a sede administrativa do Lar e o Programa Crê-Ser. Não há mais acolhimento institucional nesse endereço.</p><p>O acolhimento passou a ser realizado em três casas: duas em Itatiba e uma em Morungaba.</p></div>
+          <div className="lead-copy"><p>O prédio no Jardim Carlos Borella, em Itatiba, abriga atualmente a sede administrativa do Lar e o Programa Crê-Ser.</p><p>O acolhimento passou a ser realizado em três casas: duas em Itatiba e uma em Morungaba.</p></div>
         </div>
       </section>
       <section className="section section-soft" aria-labelledby="casas-acolhimento">

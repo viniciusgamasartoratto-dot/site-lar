@@ -102,7 +102,7 @@ export default function Home() {
 
       <section className="section section-soft">
         <div className="container section-heading-row">
-          <div><p className="eyebrow">Nossa sede</p><h2>Conheça nossa sede</h2><p>Registros da sede, onde não há mais acolhimento institucional. As casas de acolhimento ficam em locais sigilosos.</p></div>
+          <div><p className="eyebrow">Nossa sede</p><h2>Conheça nossa sede</h2></div>
           <Link className="text-link" href="/estrutura">Conheça toda a estrutura <span aria-hidden="true">→</span></Link>
         </div>
         <div className="container gallery-preview">
