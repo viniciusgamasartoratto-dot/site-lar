@@ -39,7 +39,7 @@ export default function Home() {
       <PublishedContent kind="banner" />
       <section className="section intro-section">
         <div className="container welcome-layout">
-          <figure className="welcome-photo"><img src="/images/sede-convivencia.jpeg" alt="Sede administrativa do Lar Itatibense" width="720" height="540" loading="lazy" /></figure>
+          <figure className="welcome-photo"><img src="/images/recepcao.jpg" alt="Fachada da sede administrativa do Lar Itatibense" width="600" height="400" loading="lazy" /></figure>
           <div className="welcome-content">
           <div>
             <p className="eyebrow">Sobre o Lar</p>

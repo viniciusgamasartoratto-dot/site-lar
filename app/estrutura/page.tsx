@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function StructurePage() {
   return (
     <>
-      <PageHero eyebrow="Estrutura" title="Uma sede de apoio. Três casas de acolhimento." description="O Lar conta com uma sede administrativa e do Programa Crê-Ser e três casas destinadas ao acolhimento de crianças e adolescentes." tone="cream" image={{ src: "/images/sede-convivencia.jpeg", alt: "Salão de convivência da sede do Lar Itatibense" }} />
+      <PageHero eyebrow="Estrutura" title="Uma sede de apoio. Três casas de acolhimento." description="O Lar conta com uma sede administrativa e do Programa Crê-Ser e três casas destinadas ao acolhimento de crianças e adolescentes." tone="cream" image={{ src: "/images/recepcao.jpg", alt: "Fachada da sede administrativa do Lar Itatibense" }} />
       <section className="section">
         <div className="container split-heading">
           <div><p className="eyebrow">Sede administrativa e Programa Crê-Ser</p><h2>O prédio da sede tem uma nova função.</h2></div>

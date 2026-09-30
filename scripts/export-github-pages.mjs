@@ -13,6 +13,7 @@ const routes = [
   "/programa-cre-ser",
   "/estrutura",
   "/como-ajudar",
+  "/salao",
   "/diretoria",
   "/transparencia",
 ];
