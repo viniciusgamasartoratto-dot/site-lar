@@ -34,7 +34,7 @@ export function SiteFooter() {
             {socialLinks.map((social) => (
               <a href={social.href} key={social.name} target="_blank" rel="noopener noreferrer" aria-label={`${social.name} do Lar Itatibense da Criança (abre em nova aba)`}>
                 <span className={`social-icon social-icon-${social.icon}`}><SocialIcon icon={social.icon} /></span>
-                <span><strong>{social.name}</strong><small>{social.handle}</small></span>
+
               </a>
             ))}
           </div>
