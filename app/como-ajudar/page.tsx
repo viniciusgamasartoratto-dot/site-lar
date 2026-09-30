@@ -25,7 +25,6 @@ export default function HelpPage() {
             <p className="eyebrow">Doação por Pix</p>
             <h2 id="pix-title">Um gesto de carinho faz a diferença.</h2>
             <p>Escolha o valor da sua contribuição e conclua a doação no aplicativo do seu banco.</p>
-            <p className="pix-notice"><strong>Pix em preparação.</strong> O QR Code abaixo é apenas uma demonstração e não aceita pagamentos. Enquanto isso, entre em contato com o Lar para receber os dados oficiais.</p>
             <ol className="pix-steps">
               <li>Quando o Pix estiver disponível, escaneie o QR Code ou use o Pix Copia e Cola no aplicativo do seu banco.</li>
               <li>Informe o valor que deseja doar.</li>
@@ -38,7 +37,7 @@ export default function HelpPage() {
             <span className="pix-demo-label">DEMONSTRAÇÃO</span>
             <img src="/images/pix-demonstracao.svg" width="232" height="232" alt="Ilustração de QR Code fictício, sem dados de pagamento" />
             <p className="pix-qr-caption"><strong>QR Code de demonstração</strong><br />Não aceita pagamentos.</p>
-            <dl className="pix-details"><div><dt>Instituição</dt><dd>Lar Itatibense da Criança</dd></div><div><dt>Beneficiário e CNPJ da conta</dt><dd>Aguardando confirmação oficial</dd></div></dl>
+            <dl className="pix-details"><div><dt>Instituição</dt><dd>Lar Itatibense da Criança</dd></div><div><dt>Beneficiário e CNPJ da conta</dt><dd>Lar Itatibense da Criança - 50.119.288/0001-96</dd></div></dl>
             <label htmlFor="pix-code">Pix Copia e Cola</label>
             <input id="pix-code" type="text" value="Aguardando o código Pix oficial" readOnly disabled />
             <button className="button button-green" type="button" disabled aria-describedby="pix-pending">Copiar Pix</button>
