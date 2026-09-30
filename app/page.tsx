@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       <section className="section">
-        <div className="container section-heading centered-heading"><p className="eyebrow">Quem está por perto</p><h2>Gente que faz parte do Lar.</h2></div>
+        <div className="container section-heading centered-heading"><p className="eyebrow">Quem está por perto</p><h2>Histórias de quem ajuda a cuidar.</h2></div>
         <div className="container testimonial-grid">
           {testimonials.map((testimonial) => (
             <figure className="testimonial-card" key={testimonial.name}>
