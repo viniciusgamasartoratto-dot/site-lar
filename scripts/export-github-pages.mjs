@@ -6,7 +6,7 @@ register("../tests/cloudflare-test-loader.mjs", import.meta.url);
 
 const root = resolve(import.meta.dirname, "..");
 const output = resolve(root, "pages-dist");
-const repositoryPath = "/site-lar-design-alternativo";
+const repositoryPath = "/site-lar";
 const routes = [
   "/",
   "/sobre-o-lar",
