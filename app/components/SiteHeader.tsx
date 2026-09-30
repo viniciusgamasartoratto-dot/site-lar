@@ -1,18 +1,9 @@
 import Link from "next/link";
-import { navigation, site } from "../data/site";
+import { navigation } from "../data/site";
 
 export function SiteHeader() {
   return (
     <header className="site-header">
-      <div className="utility-bar">
-        <div className="container utility-inner">
-          <p>Acolhimento, cuidado e proteção desde 1952.</p>
-          <div className="utility-links">
-            <a href={`tel:${site.phoneLinks[0]}`}>{site.phones[0]}</a>
-            <a href={`mailto:${site.email}`}>{site.email}</a>
-          </div>
-        </div>
-      </div>
       <div className="container nav-shell">
         <Link className="brand" href="/" aria-label="Lar Itatibense da Criança — página inicial">
           <img src="/images/logo-lar-simbolo.png" alt="" width="120" height="72" />
