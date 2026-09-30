@@ -26,6 +26,19 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
 /* Paleta institucional azul aplicada aos antigos detalhes verdes. */
 .gallery-preview figcaption,.structure-gallery figcaption,.program-gallery figcaption{background:linear-gradient(transparent,#103e5bf0)}
 .content-aside,.notice-card,.cta-band-inner{border-color:#b9d1e1}
+
+/* Redes sociais oficiais no rodapé. */
+.social-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.social-links>a{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:8px 12px;border:1px solid #c7d9e5;border-radius:8px;background:#fff;color:var(--brand-blue)}
+.social-links>a:hover{border-color:var(--brand-blue);background:var(--blue-soft)}
+.social-links>a>span:last-child{display:grid;gap:1px}
+.social-links strong{font-size:.82rem;line-height:1.2}
+.social-links small{max-width:150px;overflow:hidden;color:#536769;font-size:.72rem;line-height:1.2;text-overflow:ellipsis;white-space:nowrap}
+.social-icon{display:grid;width:32px;height:32px;flex:0 0 32px;place-items:center;border-radius:50%;background:var(--brand-blue);color:#fff}
+.social-icon svg{width:18px;height:18px;overflow:visible;fill:currentColor;stroke:currentColor;stroke-width:1.8}
+.social-icon-instagram svg{fill:none}
+.social-icon-instagram .social-icon-dot{fill:currentColor;stroke:none}
+.social-icon-facebook svg{stroke:none}
 @media(min-width:1081px){.desktop-nav{display:flex}.mobile-nav{display:none}}
 
 /* Menu centralizado independentemente da largura do logo e do botão. */

@@ -18,6 +18,21 @@ export const navigation = [
   { href: "/transparencia", label: "Transparência" },
 ] as const;
 
+export const socialLinks = [
+  {
+    name: "Instagram",
+    handle: "@laritatibense",
+    href: "https://www.instagram.com/laritatibense/",
+    icon: "instagram",
+  },
+  {
+    name: "Facebook",
+    handle: "Lar Itatibense da Criança",
+    href: "https://www.facebook.com/pages/Lar%20Itatibense%20Da%20Crian%C3%A7a/260450417494239/",
+    icon: "facebook",
+  },
+] as const;
+
 export const institutionalFacts = [
   {
     eyebrow: "Nossa história",
@@ -208,7 +223,7 @@ export const pendingConfirmation = [
   "Composição e áreas profissionais atuais da equipe do Programa Crê-Ser",
   "Indicadores e resultados recentes do programa",
   "Horários atualizados de atendimento administrativo e de recebimento de doações",
-  "Links oficiais de redes sociais e canal de WhatsApp",
+  "Canal oficial de WhatsApp",
   "Logotipos, descrições e links atualizados dos parceiros",
   "Datas, versões e arquivos definitivos dos documentos de transparência",
 ] as const;
