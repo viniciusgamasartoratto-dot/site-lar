@@ -66,3 +66,6 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
   .program-gallery { grid-template-columns:1fr; grid-template-rows:repeat(2,260px); }
   .program-gallery figure:first-child { grid-column:auto; grid-row:auto; }
 }
+
+/* Espaço entre o texto institucional e as ações. */
+.prose > .button-row { margin-top: 32px; }
