@@ -69,3 +69,12 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
 
 /* Espaço entre o texto institucional e as ações. */
 .prose > .button-row { margin-top: 32px; }
+
+/* Patrocinador principal em destaque no Programa Crê-Ser. */
+.program-main-sponsor{display:grid;grid-template-columns:1fr 1.15fr;align-items:center;gap:48px;margin-bottom:36px;padding:clamp(28px,4vw,56px);border:1px solid #b9d1e1;border-top:5px solid var(--brand-blue);border-radius:8px;background:#fff;box-shadow:0 12px 32px #174f7210}
+.program-main-sponsor-logo{display:flex;align-items:center;justify-content:center;padding:20px}
+.program-main-sponsor-logo img{display:block;width:100%;max-width:400px;height:auto}
+.program-main-sponsor-copy h3{margin:0 0 12px;color:var(--brand-blue);font-size:clamp(1.8rem,3vw,2.5rem)}
+.program-main-sponsor-copy .program-sponsor-status{margin-bottom:18px;color:var(--brand-blue);font-weight:700}
+.program-main-sponsor-copy .text-link{margin-top:16px}
+@media(max-width:760px){.program-main-sponsor{grid-template-columns:1fr;gap:24px}.program-main-sponsor-logo{padding:8px}.program-main-sponsor-logo img{max-width:320px}}

@@ -70,6 +70,20 @@ export default function ProgramPage() {
           <h2 id="supporters-title">Juntos pelo Programa Crê-Ser</h2>
           <p className="section-lead">O apoio de empresas contribui para o acompanhamento de crianças e famílias e fortalece o trabalho do programa na comunidade.</p>
         </div>
+        <div className="container">
+          <article className="program-main-sponsor" aria-labelledby="althaia-title">
+            <a className="program-main-sponsor-logo" href="https://althaia.com.br/instituto-althaia/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer o Instituto Althaia (abre em nova aba)">
+              <img src="/images/instituto-althaia.png" alt="Instituto Althaia" width="1272" height="545" loading="lazy" />
+            </a>
+            <div className="program-main-sponsor-copy">
+              <p className="eyebrow">Patrocínio em destaque</p>
+              <h3 id="althaia-title">Instituto Althaia</h3>
+              <p className="program-sponsor-status">Um dos nossos principais patrocinadores</p>
+              <p>O Instituto Althaia apoia o Programa Crê-Ser e contribui para a continuidade do acompanhamento de crianças e suas famílias.</p>
+              <a className="text-link" href="https://althaia.com.br/instituto-althaia/" target="_blank" rel="noopener noreferrer">Conheça o Instituto Althaia <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
         {programSupporters.length > 0 && (
           <div className="container program-supporters-grid">
             {programSupporters.map((company) => (
