@@ -25,7 +25,7 @@ export default function SalaoPage() {
           <div className="salao-hero-grid">
             <div>
               <p className="eyebrow">Salão de eventos · Lar Itatibense</p>
-              <h1>Seu encontro pode fazer <em>a diferença.</em></h1>
+              <h1>Seu encontro pode fazer <em>a diferença</em></h1>
               <p className="salao-intro">Um espaço para realizar seu evento. Uma forma de contribuir com o Lar.</p>
               <p>Ao alugar nosso salão de eventos, você ajuda a arrecadar recursos para o trabalho do Lar Itatibense da Criança.</p>
               <div className="button-row"><a className="button button-coral" href="#consultar-salao">Consultar disponibilidade</a><a className="salao-link" href="#como-alugar">Como alugar <span aria-hidden="true">↓</span></a></div>
@@ -33,7 +33,7 @@ export default function SalaoPage() {
             <aside className="salao-purpose" aria-label="O propósito do aluguel">
               <span className="salao-symbol" aria-hidden="true">✳</span>
               <p className="eyebrow">Encontros que ajudam</p>
-              <h2>Você reúne pessoas.<br />Juntos, apoiamos o Lar.</h2>
+              <h2>Você reúne pessoas<br />Juntos, apoiamos o Lar</h2>
               <p>A renda do aluguel contribui para a continuidade das atividades da instituição em favor de crianças e adolescentes.</p>
               <span className="salao-purpose-signature">Celebrar também é uma forma de cuidar.</span>
             </aside>
@@ -56,7 +56,7 @@ export default function SalaoPage() {
 
       <section className="section salao-contact-section" id="consultar-salao" aria-labelledby="salao-contact-title">
         <div className="container salao-contact">
-          <div><p className="eyebrow">Fale com o Lar</p><h2 id="salao-contact-title">Seu próximo evento começa com uma conversa.</h2><p>Entre em contato para consultar datas e solicitar informações sobre o aluguel do salão.</p><p className="salao-contact-note">A disponibilidade e a reserva são confirmadas pela equipe do Lar.</p></div>
+          <div><p className="eyebrow">Fale com o Lar</p><h2 id="salao-contact-title">Seu próximo evento começa com uma conversa</h2><p>Entre em contato para consultar datas e solicitar informações sobre o aluguel do salão.</p><p className="salao-contact-note">A disponibilidade e a reserva são confirmadas pela equipe do Lar.</p></div>
           <div className="salao-contact-card"><h3>Consulte datas e valores</h3><a className="button button-green" href={inquiry}>Solicitar informações por e-mail</a><p>Prefere ligar?</p>{site.phones.map((phone, index) => <a className="salao-phone" href={`tel:${site.phoneLinks[index]}`} key={phone}>{phone}</a>)}<a className="salao-email" href={inquiry}>{site.email}</a></div>
         </div>
       </section>

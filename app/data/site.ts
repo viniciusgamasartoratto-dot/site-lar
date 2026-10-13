@@ -37,14 +37,14 @@ export const institutionalFacts = [
   {
     eyebrow: "Nossa história",
     value: "Desde 1952",
-    title: "Presença que atravessa gerações.",
+    title: "Presença que atravessa gerações",
     description: "As atividades começaram em 30 de julho de 1952 e seguem conectadas à comunidade itatibense.",
   },
   {
     eyebrow: "Quem acolhemos",
     value: "0 a 17 anos",
     suffix: "e 11 meses",
-    title: "Proteção para a infância e a adolescência.",
+    title: "Proteção para a infância e a adolescência",
     description: "Crianças e adolescentes encaminhados pelo Poder Judiciário como medida de proteção.",
   },
 ] as const;

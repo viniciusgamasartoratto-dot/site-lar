@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function TransparencyPage() {
   return (
     <>
-      <PageHero eyebrow="Transparência" title="Prestação de contas, ao seu alcance." description="Consulte e baixe balanços, documentos institucionais, certidões e registros de governança do Lar." tone="green" />
+      <PageHero eyebrow="Transparência" title="Prestação de contas, ao seu alcance" description="Consulte e baixe balanços, documentos institucionais, certidões e registros de governança do Lar." tone="green" />
       <section className="section section-soft">
         <PublishedContent kind="pdf" />
         <div className="container document-toolbar"><p>{transparencyDocuments.length} documentos do acervo inicial</p><span className="document-category">PDFs e acervo institucional</span></div>

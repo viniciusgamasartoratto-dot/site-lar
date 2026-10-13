@@ -19,7 +19,7 @@ export default function Home() {
           <div className="home-hero-copy">
             
             <p className="eyebrow eyebrow-light">Programa Crê-Ser</p>
-            <h1>Cuidar hoje.<br /><em>Transformar o amanhã.</em></h1>
+            <h1>Cuidar hoje<br /><em>Transformar o amanhã</em></h1>
             <p>No Programa Crê-Ser, crianças e famílias de Itatiba encontram acompanhamento psicossocial, escuta e apoio.</p>
             <div className="button-row">
               <Link className="button button-coral" href="/programa-cre-ser">Conheça o Programa Crê-Ser</Link>
@@ -43,7 +43,7 @@ export default function Home() {
           <div className="welcome-content">
           <div>
             <p className="eyebrow">Sobre o Lar</p>
-            <h2>Bem-vindo ao Lar Itatibense da Criança.</h2>
+            <h2>Bem-vindo ao Lar Itatibense da Criança</h2>
           </div>
           <div className="lead-copy">
             <p>Desde 30 de julho de 1952, o Lar Itatibense da Criança atua no acolhimento institucional de crianças e adolescentes encaminhados pelo Poder Judiciário como medida de proteção.</p>
@@ -70,7 +70,7 @@ export default function Home() {
             <figure className="program-home-photo program-home-symbol"><img src="/images/cre-ser-logo.png" alt="Símbolo do Programa Crê-Ser" width="540" height="540" loading="lazy" /></figure>
             <div>
               <p className="eyebrow">Programa Crê-Ser</p>
-              <h2>Cuidar de uma criança também é apoiar sua família.</h2>
+              <h2>Cuidar de uma criança também é apoiar sua família</h2>
               <p className="section-lead">A iniciativa recebe encaminhamentos de órgãos ligados à infância e acompanha crianças e famílias expostas a riscos sociais.</p>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function Home() {
 
       <section className="section">
         <div className="container section-heading-row">
-          <div><p className="eyebrow">Como ajudar</p><h2>Há muitas formas de estar presente.</h2></div>
+          <div><p className="eyebrow">Como ajudar</p><h2>Há muitas formas de estar presente</h2></div>
           <p>Doações, voluntariado e parcerias ajudam o Lar a manter um cuidado contínuo e responsável.</p>
         </div>
         <div className="container help-card-grid">
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       <section className="section">
-        <div className="container section-heading centered-heading"><p className="eyebrow">Quem está por perto</p><h2>Histórias de quem ajuda a cuidar.</h2></div>
+        <div className="container section-heading centered-heading"><p className="eyebrow">Quem está por perto</p><h2>Histórias de quem ajuda a cuidar</h2></div>
         <div className="container testimonial-grid">
           {testimonials.map((testimonial) => (
             <figure className="testimonial-card" key={testimonial.name}>
@@ -129,12 +129,12 @@ export default function Home() {
 
       <section className="section transparency-preview">
         <div className="container transparency-card">
-          <div><p className="eyebrow eyebrow-light">Transparência</p><h2>Nosso trabalho, de portas abertas.</h2><p>Consulte documentos institucionais, certificações, balanços, estatuto e registros de governança.</p></div>
+          <div><p className="eyebrow eyebrow-light">Transparência</p><h2>Nosso trabalho, de portas abertas</h2><p>Consulte documentos institucionais, certificações, balanços, estatuto e registros de governança.</p></div>
           <Link className="button button-cream" href="/transparencia">Acessar documentos</Link>
         </div>
       </section>
 
-      <CtaBand title="Tem um lugar para você nesta história." text="Converse com a nossa equipe e descubra como participar do dia a dia do Lar." primaryHref="/como-ajudar" primaryLabel="Quero ajudar" secondaryHref="/#fale-com-o-lar" secondaryLabel="Falar com o Lar" />
+      <CtaBand title="Tem um lugar para você nesta história" text="Converse com a nossa equipe e descubra como participar do dia a dia do Lar." primaryHref="/como-ajudar" primaryLabel="Quero ajudar" secondaryHref="/#fale-com-o-lar" secondaryLabel="Falar com o Lar" />
     </>
   );
 }

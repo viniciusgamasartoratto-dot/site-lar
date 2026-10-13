@@ -18,7 +18,7 @@ const timeline = [
 export default function AboutPage() {
   return (
     <>
-      <PageHero eyebrow="Sobre o Lar" title="Há mais de sete décadas, uma casa de cuidado e proteção." description="O Lar Itatibense da Criança é uma organização privada, sem fins lucrativos e de utilidade pública, dedicada ao acolhimento institucional de crianças e adolescentes." tone="cream" image={{ src: "/images/sede-jogos.jpeg", alt: "Espaço de jogos da sede do Lar Itatibense" }} />
+      <PageHero eyebrow="Sobre o Lar" title="Há mais de sete décadas, uma casa de cuidado e proteção" description="O Lar Itatibense da Criança é uma organização privada, sem fins lucrativos e de utilidade pública, dedicada ao acolhimento institucional de crianças e adolescentes." tone="cream" image={{ src: "/images/sede-jogos.jpeg", alt: "Espaço de jogos da sede do Lar Itatibense" }} />
 
       <section className="section">
         <div className="container content-grid">
@@ -33,7 +33,7 @@ export default function AboutPage() {
             </ul>
           </aside>
           <div className="prose">
-            <h2>Uma instituição que nasceu com a cidade ao seu lado.</h2>
+            <h2>Uma instituição que nasceu com a cidade ao seu lado</h2>
             <p>Ao longo da história, o Lar passou por diferentes endereços. Uma de suas sedes ficava à margem do Ribeirão Jacaré e foi severamente atingida por enchentes, mobilizando a população de Itatiba para socorrer as crianças.</p>
             <p>A sede no Jardim Carlos Borella, construída com apoio comunitário, marcou uma nova etapa da história do Lar. Atualmente, o prédio abriga a administração e o Programa Crê-Ser, sem acolhimento institucional nesse endereço.</p>
             <p>O acolhimento é realizado em três casas — Florecer, Gira mundo e Bem-te-vi —, sendo duas em Itatiba e uma em Morungaba. Suas localizações são mantidas em sigilo para proteger as crianças e os adolescentes.</p>
@@ -53,7 +53,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CtaBand eyebrow="Programa em destaque" title="Conheça o Programa Crê-Ser." text="Acompanhamento psicossocial para crianças e famílias da comunidade itatibense em situação de vulnerabilidade." primaryHref="/programa-cre-ser" primaryLabel="Conheça o programa" secondaryHref="/#fale-com-o-lar" secondaryLabel="Entrar em contato" />
+      <CtaBand eyebrow="Programa em destaque" title="Conheça o Programa Crê-Ser" text="Acompanhamento psicossocial para crianças e famílias da comunidade itatibense em situação de vulnerabilidade." primaryHref="/programa-cre-ser" primaryLabel="Conheça o programa" secondaryHref="/#fale-com-o-lar" secondaryLabel="Entrar em contato" />
     </>
   );
 }

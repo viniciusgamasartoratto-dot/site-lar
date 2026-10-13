@@ -9,5 +9,5 @@ export default async function AdminPage() {
   try { authenticated = await hasAdminSession((await headers()).get("cookie")); }
   catch (error) { console.error("Admin session unavailable", error); }
   if (!authenticated) return <AdminLogin />;
-  return <section className="section admin-section"><div className="container"><div className="admin-heading"><p className="eyebrow">Administração do Lar</p><form action="/api/admin/logout" method="post"><button className="button admin-secondary">Sair do painel</button></form></div><h1>Publicar e cuidar do conteúdo.</h1><p>Cadastre documentos para a Transparência e banners de eventos para a página inicial.</p><AdminPanel /></div></section>;
+  return <section className="section admin-section"><div className="container"><div className="admin-heading"><p className="eyebrow">Administração do Lar</p><form action="/api/admin/logout" method="post"><button className="button admin-secondary">Sair do painel</button></form></div><h1>Publicar e cuidar do conteúdo</h1><p>Cadastre documentos para a Transparência e banners de eventos para a página inicial.</p><AdminPanel /></div></section>;
 }

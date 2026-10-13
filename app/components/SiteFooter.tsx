@@ -58,7 +58,7 @@ export function SiteFooter() {
           </address>
         </div>
         <div className="footer-action">
-          <h2>Seu apoio abre caminhos.</h2>
+          <h2>Seu apoio abre caminhos</h2>
           <p>Converse com a instituição para conhecer as necessidades atuais e a melhor forma de contribuir.</p>
           <Link className="button button-coral" href="/como-ajudar">Quero ajudar</Link>
         </div>

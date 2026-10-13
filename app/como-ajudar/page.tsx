@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 export default function HelpPage() {
   return (
     <>
-      <PageHero eyebrow="Como ajudar" title="Encontre seu jeito de ajudar." description="Uma doação, algumas horas do seu tempo ou uma parceria: há diferentes formas de participar do trabalho do Lar." tone="coral" image={{ src: "/images/sobre-maos.jpg", alt: "Mãos reunidas representando cooperação e apoio" }} />
+      <PageHero eyebrow="Como ajudar" title="Encontre seu jeito de ajudar" description="Uma doação, algumas horas do seu tempo ou uma parceria: há diferentes formas de participar do trabalho do Lar." tone="coral" image={{ src: "/images/sobre-maos.jpg", alt: "Mãos reunidas representando cooperação e apoio" }} />
       <section className="section section-soft" id="doar">
         <div className="container pix-donation" aria-labelledby="pix-title">
           <div>
             <p className="eyebrow">Doação por Pix</p>
-            <h2 id="pix-title">Um gesto de carinho faz a diferença.</h2>
+            <h2 id="pix-title">Um gesto de carinho faz a diferença</h2>
             <p>Escolha o valor da sua contribuição e conclua a doação no aplicativo do seu banco.</p>
             <ol className="pix-steps">
               <li>Quando o Pix estiver disponível, escaneie o QR Code ou use o Pix Copia e Cola no aplicativo do seu banco.</li>
@@ -45,7 +45,7 @@ export default function HelpPage() {
       </section>
 
       <section className="section">
-        <div className="container section-heading-row"><div><p className="eyebrow">Formas de contribuir</p><h2>Escolha a maneira que combina com você.</h2></div><p>Antes de doar materiais ou organizar uma ação, converse com o Lar para conhecer as necessidades atuais.</p></div>
+        <div className="container section-heading-row"><div><p className="eyebrow">Formas de contribuir</p><h2>Escolha a maneira que combina com você</h2></div><p>Antes de doar materiais ou organizar uma ação, converse com o Lar para conhecer as necessidades atuais.</p></div>
         <div className="container support-grid">
           {helpWays.map((way, index) => <article className="support-card" key={way}><span className="support-number">{String(index + 1).padStart(2, "0")}</span><h2>{way}</h2><p>{index === 0 ? "Entre em contato com o Lar para receber os dados para doação." : index === 1 ? "Materiais podem atender à rotina das crianças e adolescentes ou apoiar o bazar da instituição." : index === 5 ? "Consulte o Lar para receber a orientação atual sobre o cadastro e a destinação de documentos fiscais." : "Entre em contato para alinhar sua contribuição às necessidades e possibilidades atuais da instituição."}</p></article>)}
         </div>
@@ -53,7 +53,7 @@ export default function HelpPage() {
 
       <section className="section">
         <div className="container transparency-card">
-          <div><p className="eyebrow eyebrow-light">Transparência</p><h2>Acompanhe os documentos do Lar.</h2><p>Consulte balanços, estatuto, certidões, certificados e outros registros institucionais.</p></div>
+          <div><p className="eyebrow eyebrow-light">Transparência</p><h2>Acompanhe os documentos do Lar</h2><p>Consulte balanços, estatuto, certidões, certificados e outros registros institucionais.</p></div>
           <Link className="button button-cream" href="/transparencia">Ver transparência</Link>
         </div>
       </section>

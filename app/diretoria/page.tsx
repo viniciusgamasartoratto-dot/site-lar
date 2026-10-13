@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 export default function BoardPage() {
   return (
     <>
-      <PageHero eyebrow="Diretoria" title="Conheça quem cuida do Lar." description="A administração do Lar é realizada por uma diretoria voluntária, com apoio dos conselhos deliberativo e fiscal." tone="green" />
+      <PageHero eyebrow="Diretoria" title="Conheça quem cuida do Lar" description="A administração do Lar é realizada por uma diretoria voluntária, com apoio dos conselhos deliberativo e fiscal." tone="green" />
       <section className="section">
-        <div className="container section-heading-row"><div><p className="eyebrow">Diretoria</p><h2>Vigência de 19 de fevereiro de 2024 a 18 de fevereiro de 2027.</h2></div></div>
+        <div className="container section-heading-row"><div><p className="eyebrow">Diretoria</p><h2>Vigência de 19 de fevereiro de 2024 a 18 de fevereiro de 2027</h2></div></div>
         <div className="container board-grid">
           {directors.map((person) => (
             <article className="board-card" key={`${person.name}-${person.role}`}>
@@ -24,12 +24,12 @@ export default function BoardPage() {
         </div>
       </section>
       <section className="section section-soft">
-        <div className="container section-heading-row"><div><p className="eyebrow">Conselho Fiscal</p><h2>Vigência de 18 de fevereiro de 2024 a 17 de fevereiro de 2030.</h2></div></div>
+        <div className="container section-heading-row"><div><p className="eyebrow">Conselho Fiscal</p><h2>Vigência de 18 de fevereiro de 2024 a 17 de fevereiro de 2030</h2></div></div>
         <div className="container cards-3">
           {fiscalCouncil.map((name) => <article className="info-card" key={name}><p className="eyebrow">Conselheiro fiscal</p><h2>{name}</h2></article>)}
         </div>
       </section>
-      <CtaBand eyebrow="Documentos" title="Governança transparente fortalece a confiança." text="Consulte estatuto, balanços, certificados e registros institucionais na área de transparência." primaryHref="/transparencia" primaryLabel="Acessar transparência" secondaryHref="/#fale-com-o-lar" secondaryLabel="Falar com o Lar" />
+      <CtaBand eyebrow="Documentos" title="Governança transparente fortalece a confiança" text="Consulte estatuto, balanços, certificados e registros institucionais na área de transparência." primaryHref="/transparencia" primaryLabel="Acessar transparência" secondaryHref="/#fale-com-o-lar" secondaryLabel="Falar com o Lar" />
     </>
   );
 }
