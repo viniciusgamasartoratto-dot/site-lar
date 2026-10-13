@@ -5,13 +5,13 @@ import { directors, fiscalCouncil } from "../data/site";
 
 export const metadata: Metadata = {
   title: "Diretoria e Conselho Fiscal",
-  description: "Conheça a diretoria voluntária e o Conselho Fiscal do Lar Itatibense da Criança.",
+  description: "Conheça a diretoria e o Conselho Fiscal do Lar Itatibense da Criança.",
 };
 
 export default function BoardPage() {
   return (
     <>
-      <PageHero eyebrow="Diretoria" title="Conheça quem cuida do Lar" description="A administração do Lar é realizada por uma diretoria voluntária, com apoio dos conselhos deliberativo e fiscal." tone="green" />
+      <PageHero eyebrow="Diretoria" title="Conheça quem cuida do Lar" description="A administração do Lar é realizada por uma diretoria, com apoio dos conselhos deliberativo e fiscal." tone="green" />
       <section className="section">
         <div className="container section-heading-row"><div><p className="eyebrow">Diretoria</p><h2>Vigência de 19 de fevereiro de 2024 a 18 de fevereiro de 2027</h2></div></div>
         <div className="container board-grid">

@@ -4,7 +4,7 @@ import { CtaBand } from "./components/CtaBand";
 import { BrandSignature } from "./components/BrandSignature";
 import { PublishedContent } from "./components/PublishedContent";
 import { HomeCarousel } from "./components/HomeCarousel";
-import { institutionalFacts, programHighlights, structureImages, testimonials } from "./data/site";
+import { institutionalFacts, programHighlights, structureImages } from "./data/site";
 
 export const metadata: Metadata = {
   title: "Acolhimento e proteção desde 1952",
@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <div className="lead-copy">
             <p>Desde 30 de julho de 1952, o Lar Itatibense da Criança atua no acolhimento institucional de crianças e adolescentes encaminhados pelo Poder Judiciário como medida de proteção.</p>
-            <p>Organização sem fins lucrativos e de utilidade pública, é administrada por uma diretoria voluntária com apoio dos conselhos deliberativo e fiscal.</p>
+            <p>Organização sem fins lucrativos e de utilidade pública, é administrada por uma diretoria com apoio dos conselhos deliberativo e fiscal.</p>
             <Link className="text-link" href="/sobre-o-lar">Conheça nossa história <span aria-hidden="true">→</span></Link>
           </div>
         </div>
@@ -91,11 +91,10 @@ export default function Home() {
       <section className="section">
         <div className="container section-heading-row">
           <div><p className="eyebrow">Como ajudar</p><h2>Há muitas formas de estar presente</h2></div>
-          <p>Doações, voluntariado e parcerias ajudam o Lar a manter um cuidado contínuo e responsável.</p>
+          <p>Doações e parcerias ajudam o Lar a manter um cuidado contínuo e responsável.</p>
         </div>
-        <div className="container help-card-grid">
+        <div className="container cards-2">
           <article className="help-card help-card-green"><h3>Faça uma doação</h3><p>Contribua financeiramente ou converse com o Lar sobre os materiais necessários no momento.</p><Link href="/como-ajudar#doar">Quero doar →</Link></article>
-          <article className="help-card help-card-coral"><h3>Doe seu tempo</h3><p>Participe de ações, eventos e atividades voluntárias de acordo com as necessidades institucionais.</p><Link href="/como-ajudar#voluntariado">Quero ser voluntário →</Link></article>
           <article className="help-card help-card-blue"><h3>Construa uma parceria</h3><p>Aproxime sua empresa ou especialidade profissional de uma instituição comprometida com a infância.</p><Link href="/como-ajudar#parcerias">Quero ser parceiro →</Link></article>
         </div>
       </section>
@@ -115,19 +114,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container section-heading centered-heading"><p className="eyebrow">Quem está por perto</p><h2>Histórias de quem ajuda a cuidar</h2></div>
-        <div className="container testimonial-grid">
-          {testimonials.map((testimonial) => (
-            <figure className="testimonial-card" key={testimonial.name}>
-              <blockquote>“{testimonial.quote}”</blockquote>
-              <figcaption><strong>{testimonial.name}</strong><span>{testimonial.context}</span></figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      <section className="section transparency-preview">
+<section className="section transparency-preview">
         <div className="container transparency-card">
           <div><p className="eyebrow eyebrow-light">Transparência</p><h2>Nosso trabalho, de portas abertas</h2><p>Consulte documentos institucionais, certificações, balanços, estatuto e registros de governança.</p></div>
           <Link className="button button-cream" href="/transparencia">Acessar documentos</Link>

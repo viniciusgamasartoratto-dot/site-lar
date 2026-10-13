@@ -5,13 +5,13 @@ import { helpWays } from "../data/site";
 
 export const metadata: Metadata = {
   title: "Como ajudar",
-  description: "Conheça as formas de apoiar o Lar Itatibense da Criança com doações, voluntariado, Nota Fiscal Paulista e parcerias.",
+  description: "Conheça as formas de apoiar o Lar Itatibense da Criança com doações, Nota Fiscal Paulista e parcerias.",
 };
 
 export default function HelpPage() {
   return (
     <>
-      <PageHero eyebrow="Como ajudar" title="Encontre seu jeito de ajudar" description="Uma doação, algumas horas do seu tempo ou uma parceria: há diferentes formas de participar do trabalho do Lar." tone="coral" image={{ src: "/images/sobre-maos.jpg", alt: "Mãos reunidas representando cooperação e apoio" }} />
+      <PageHero eyebrow="Como ajudar" title="Encontre seu jeito de ajudar" description="Uma doação ou uma parceria: há diferentes formas de participar do trabalho do Lar." tone="coral" image={{ src: "/images/sobre-maos.jpg", alt: "Mãos reunidas representando cooperação e apoio" }} />
       <section className="section section-soft" id="doar">
         <div className="container pix-donation" aria-labelledby="pix-title">
           <div>
@@ -37,9 +37,8 @@ export default function HelpPage() {
             <p id="pix-pending" className="pix-pending">Disponível após a inclusão dos dados oficiais.</p>
           </div>
         </div>
-        <div className="container cards-3">
+        <div className="container cards-2">
           <article className="info-card"><p className="eyebrow">Doação financeira</p><h2>Quero doar</h2><p>Solicite os dados para doação por telefone ou e-mail.</p><Link className="button button-green" href="/#fale-com-o-lar">Pedir dados para doação</Link></article>
-          <article className="info-card" id="voluntariado"><p className="eyebrow">Voluntariado</p><h2>Quero doar meu tempo</h2><p>Conte sobre sua disponibilidade e habilidades para que a equipe oriente a forma mais adequada de participação.</p><Link className="button button-green" href="/#fale-com-o-lar">Quero ser voluntário</Link></article>
           <article className="info-card" id="parcerias"><p className="eyebrow">Empresas e profissionais</p><h2>Quero construir uma parceria</h2><p>Empresas e profissionais podem apoiar com recursos, serviços ou conhecimento, conforme alinhamento institucional.</p><Link className="button button-green" href="/#fale-com-o-lar">Quero ser parceiro</Link></article>
         </div>
       </section>
@@ -47,7 +46,7 @@ export default function HelpPage() {
       <section className="section">
         <div className="container section-heading-row"><div><p className="eyebrow">Formas de contribuir</p><h2>Escolha a maneira que combina com você</h2></div><p>Antes de doar materiais ou organizar uma ação, converse com o Lar para conhecer as necessidades atuais.</p></div>
         <div className="container support-grid">
-          {helpWays.map((way, index) => <article className="support-card" key={way}><span className="support-number">{String(index + 1).padStart(2, "0")}</span><h2>{way}</h2><p>{index === 0 ? "Entre em contato com o Lar para receber os dados para doação." : index === 1 ? "Materiais podem atender à rotina das crianças e adolescentes ou apoiar o bazar da instituição." : index === 5 ? "Consulte o Lar para receber a orientação atual sobre o cadastro e a destinação de documentos fiscais." : "Entre em contato para alinhar sua contribuição às necessidades e possibilidades atuais da instituição."}</p></article>)}
+          {helpWays.map((way, index) => <article className="support-card" key={way}><span className="support-number">{String(index + 1).padStart(2, "0")}</span><h2>{way}</h2><p>{index === 0 ? "Entre em contato com o Lar para receber os dados para doação." : index === 1 ? "Materiais podem atender à rotina das crianças e adolescentes ou apoiar o bazar da instituição." : way.includes("Nota Fiscal Paulista") ? "Consulte o Lar para receber a orientação atual sobre o cadastro e a destinação de documentos fiscais." : "Entre em contato para alinhar sua contribuição às necessidades e possibilidades atuais da instituição."}</p></article>)}
         </div>
       </section>
 

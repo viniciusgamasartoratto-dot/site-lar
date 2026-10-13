@@ -29,7 +29,7 @@ export default function AboutPage() {
               <li>Acolhimento por medida de proteção</li>
               <li>Público de 0 a 17 anos e 11 meses</li>
               <li>Acolhimento em três casas: duas em Itatiba e uma em Morungaba</li>
-              <li>Administração por diretoria voluntária</li>
+              <li>Administração por diretoria</li>
             </ul>
           </aside>
           <div className="prose">
@@ -47,7 +47,7 @@ export default function AboutPage() {
             <p>Monitores acompanham a rotina da entidade 24 horas por dia, inclusive aos feriados. O trabalho busca responder às necessidades de proteção com carinho, atenção e responsabilidade.</p>
 
             <h2>Administração e governança</h2>
-            <p>A administração é realizada por uma diretoria formada por voluntários de diferentes setores da sociedade local, com assessoramento dos conselhos deliberativo e fiscal.</p>
+            <p>A administração é realizada por uma diretoria formada por pessoas de diferentes setores da sociedade local, com assessoramento dos conselhos deliberativo e fiscal.</p>
             <div className="button-row"><Link className="button button-green" href="/diretoria">Conhecer a diretoria</Link><Link className="text-link" href="/transparencia">Consultar documentos →</Link></div>
           </div>
         </div>

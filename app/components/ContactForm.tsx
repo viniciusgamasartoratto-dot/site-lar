@@ -29,7 +29,6 @@ export function ContactForm() {
         <option>Contato pelo site</option>
         <option>Quero apoiar o Programa Crê-Ser</option>
         <option>Quero fazer uma doação</option>
-        <option>Quero ser voluntário</option>
         <option>Quero ser parceiro</option>
         <option>Encaminhamento ao Programa Crê-Ser</option>
       </select></label>

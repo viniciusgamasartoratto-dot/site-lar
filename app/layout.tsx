@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description,
     applicationName: "Lar Itatibense da Criança",
     authors: [{ name: "Lar Itatibense da Criança" }],
-    keywords: ["Lar Itatibense da Criança", "Programa Crê-Ser", "acolhimento institucional", "Itatiba", "doação", "voluntariado"],
+    keywords: ["Lar Itatibense da Criança", "Programa Crê-Ser", "acolhimento institucional", "Itatiba", "doação"],
     icons: { icon: "/images/logo-lar.gif", shortcut: "/images/logo-lar.gif" },
     openGraph: { title: "Lar Itatibense da Criança", description, type: "website", locale: "pt_BR", url: origin, images: [{ url: `${origin}/og.png`, width: 1200, height: 630, alt: "Lar Itatibense da Criança e Programa Crê-Ser" }] },
     twitter: { card: "summary_large_image", title: "Lar Itatibense da Criança", description, images: [`${origin}/og.png`] },

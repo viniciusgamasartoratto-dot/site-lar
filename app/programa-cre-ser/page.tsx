@@ -13,7 +13,7 @@ const faqs = [
   { question: "Quem pode ser atendido pelo Programa Crê-Ser?", answer: "O programa é aberto à comunidade itatibense e atende crianças e famílias que necessitam de acompanhamento especializado diante de situações de vulnerabilidade e risco social." },
   { question: "Como acontece o encaminhamento?", answer: "O programa recebe encaminhamentos de órgãos que atuam com questões relacionadas à infância. Entre em contato com o Lar para orientações sobre encaminhamento." },
   { question: "Qual atendimento é oferecido?", answer: "O programa oferece acompanhamento psicossocial para crianças e suas famílias." },
-  { question: "Como posso apoiar o programa?", answer: "Pessoas, empresas e profissionais podem conversar com a instituição sobre doações, voluntariado ou parcerias alinhadas às necessidades atuais do programa." },
+  { question: "Como posso apoiar o programa?", answer: "Pessoas, empresas e profissionais podem conversar com a instituição sobre doações ou parcerias alinhadas às necessidades atuais do programa." },
 ] as const;
 
 export default function ProgramPage() {
@@ -88,7 +88,7 @@ export default function ProgramPage() {
         </div>
       </section>
 
-      <CtaBand eyebrow="Apoie o programa" title="Uma rede forte começa com uma boa conversa" text="Entre em contato para orientar um encaminhamento, propor uma parceria, ser voluntário ou apoiar o Programa Crê-Ser." primaryHref="/#fale-com-o-lar" primaryLabel="Falar com a equipe" secondaryHref="/como-ajudar" secondaryLabel="Ver formas de ajudar" />
+      <CtaBand eyebrow="Apoie o programa" title="Uma rede forte começa com uma boa conversa" text="Entre em contato para orientar um encaminhamento, propor uma parceria ou apoiar o Programa Crê-Ser." primaryHref="/#fale-com-o-lar" primaryLabel="Falar com a equipe" secondaryHref="/como-ajudar" secondaryLabel="Ver formas de ajudar" />
     </>
   );
 }

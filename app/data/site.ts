@@ -82,7 +82,6 @@ export const directors = [
   { name: "Arnaldo Pereira", role: "Tesoureiro", photo: "/images/diretoria/arnaldo-pereira.jpg" },
   { name: "José C. Osso", role: "Tesoureiro", photo: "/images/diretoria/jose-osso.jpg" },
   { name: "José L. Sesti", role: "Patrimônio", photo: "/images/diretoria/jose-sesti.jpg" },
-  { name: "Nelson M. Costa", role: "Apoio voluntário", photo: "/images/diretoria/nelson-costa.jpg" },
 ] as const;
 
 export const fiscalCouncil = [
@@ -169,29 +168,10 @@ export const transparencyDocuments = [
   },
 ] satisfies readonly TransparencyDocument[];
 
-export const testimonials = [
-  {
-    quote: "Esse vínculo foi criado pelo carinho. Cada minuto é uma semente de amor que podemos cultivar.",
-    name: "Benedita Donizeti",
-    context: "Ex-funcionária e voluntária",
-  },
-  {
-    quote: "É um prazer ser voluntário de uma instituição séria, que traz acolhimento, esperança e amor para as crianças.",
-    name: "Denis Carvalho",
-    context: "Voluntário",
-  },
-  {
-    quote: "A verdadeira caridade é o desejo de ser útil aos outros sem pensar em recompensa.",
-    name: "Luzia Marchesin",
-    context: "Voluntária",
-  },
-] as const;
-
 export const helpWays = [
   "Doação financeira diretamente à instituição",
   "Doação de materiais para uso ou para o bazar",
   "Associação como contribuinte mensal, semestral ou anual",
-  "Participação voluntária com tempo e afeto",
   "Participação em festas, bazares e eventos",
   "Destinação de documentos fiscais pela Nota Fiscal Paulista",
   "Apoio de empresas e estabelecimento de parcerias",
