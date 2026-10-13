@@ -78,3 +78,9 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
 .program-main-sponsor-copy .program-sponsor-status{margin-bottom:18px;color:var(--brand-blue);font-weight:700}
 .program-main-sponsor-copy .text-link{margin-top:16px}
 @media(max-width:760px){.program-main-sponsor{grid-template-columns:1fr;gap:24px}.program-main-sponsor-logo{padding:8px}.program-main-sponsor-logo img{max-width:320px}}
+
+/* Duas frases completas no título da Estrutura. */
+.structure-hero .page-hero-grid.has-image{grid-template-columns:1.5fr .8fr;gap:40px}
+.structure-hero h1{font-size:clamp(1.5rem,2.5vw,2.75rem)}
+.structure-title-line{display:block;white-space:nowrap}
+@media(max-width:900px){.structure-hero .page-hero-grid.has-image{grid-template-columns:1fr}.structure-hero h1{font-size:clamp(1rem,5vw,2.75rem)}}

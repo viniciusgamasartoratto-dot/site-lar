@@ -3,15 +3,16 @@ import { BrandSignature } from "./BrandSignature";
 
 type PageHeroProps = {
   eyebrow: string;
-  title: string;
+  className?: string;
+  title: import("react").ReactNode;
   description: string;
   tone?: "green" | "coral" | "cream";
   image?: { src: string; alt: string };
 };
 
-export function PageHero({ eyebrow, title, description, tone = "green", image }: PageHeroProps) {
+export function PageHero({ eyebrow, title, description, tone = "green", image, className }: PageHeroProps) {
   return (
-    <section className={`page-hero page-hero-${tone}`}>
+    <section className={`page-hero page-hero-${tone}${className ? " " + className : ""}`}>
       <div className={`container page-hero-grid${image ? " has-image" : ""}`}>
         <div>
           <nav className="breadcrumbs" aria-label="Trilha de navegação">
