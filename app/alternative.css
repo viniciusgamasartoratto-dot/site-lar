@@ -84,3 +84,11 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
 .structure-hero h1{font-size:clamp(1.5rem,2.5vw,2.75rem)}
 .structure-title-line{display:block;white-space:nowrap}
 @media(max-width:900px){.structure-hero .page-hero-grid.has-image{grid-template-columns:1fr}.structure-hero h1{font-size:clamp(1rem,5vw,2.75rem)}}
+
+/* Menu com o salão de eventos: evita sobreposição em telas intermediárias. */
+@media(min-width:1081px) and (max-width:1249px){
+  .nav-shell{display:flex}
+  .desktop-nav{display:none}
+  .mobile-nav{display:block}
+  .nav-shell>.header-donate{margin-left:auto}
+}

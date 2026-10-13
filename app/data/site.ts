@@ -14,6 +14,7 @@ export const navigation = [
   { href: "/sobre-o-lar", label: "Sobre o Lar" },
   { href: "/programa-cre-ser", label: "Programa Crê-Ser", featured: false },
   { href: "/estrutura", label: "Estrutura" },
+  { href: "/salao", label: "Salão de eventos" },
   { href: "/como-ajudar", label: "Como ajudar" },
   { href: "/transparencia", label: "Transparência" },
 ] as const;
