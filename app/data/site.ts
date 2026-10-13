@@ -168,16 +168,6 @@ export const transparencyDocuments = [
   },
 ] satisfies readonly TransparencyDocument[];
 
-export const helpWays = [
-  "Doação financeira diretamente à instituição",
-  "Doação de materiais para uso ou para o bazar",
-  "Associação como contribuinte mensal, semestral ou anual",
-  "Participação em festas, bazares e eventos",
-  "Destinação de documentos fiscais pela Nota Fiscal Paulista",
-  "Apoio de empresas e estabelecimento de parcerias",
-  "Divulgação responsável do trabalho do Lar",
-] as const;
-
 export const programHighlights = [
   {
     number: "01",

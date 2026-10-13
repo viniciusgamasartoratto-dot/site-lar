@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "../components/PageHero";
-import { helpWays } from "../data/site";
 
 export const metadata: Metadata = {
   title: "Como ajudar",
-  description: "Conheça as formas de apoiar o Lar Itatibense da Criança com doações, Nota Fiscal Paulista e parcerias.",
+  description: "Conheça as formas de apoiar o Lar Itatibense da Criança com doações e parcerias.",
 };
 
 export default function HelpPage() {
@@ -43,14 +42,7 @@ export default function HelpPage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container section-heading-row"><div><p className="eyebrow">Formas de contribuir</p><h2>Escolha a maneira que combina com você</h2></div><p>Antes de doar materiais ou organizar uma ação, converse com o Lar para conhecer as necessidades atuais.</p></div>
-        <div className="container support-grid">
-          {helpWays.map((way, index) => <article className="support-card" key={way}><span className="support-number">{String(index + 1).padStart(2, "0")}</span><h2>{way}</h2><p>{index === 0 ? "Entre em contato com o Lar para receber os dados para doação." : index === 1 ? "Materiais podem atender à rotina das crianças e adolescentes ou apoiar o bazar da instituição." : way.includes("Nota Fiscal Paulista") ? "Consulte o Lar para receber a orientação atual sobre o cadastro e a destinação de documentos fiscais." : "Entre em contato para alinhar sua contribuição às necessidades e possibilidades atuais da instituição."}</p></article>)}
-        </div>
-      </section>
-
-      <section className="section">
+<section className="section">
         <div className="container transparency-card">
           <div><p className="eyebrow eyebrow-light">Transparência</p><h2>Acompanhe os documentos do Lar</h2><p>Consulte balanços, estatuto, certidões, certificados e outros registros institucionais.</p></div>
           <Link className="button button-cream" href="/transparencia">Ver transparência</Link>
