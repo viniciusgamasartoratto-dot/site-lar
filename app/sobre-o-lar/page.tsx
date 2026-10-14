@@ -12,7 +12,9 @@ const timeline = [
   { year: "1952", title: "Início das atividades", text: "A instituição iniciou suas atividades em 30 de julho, por iniciativa do então deputado federal Paulo Abreu." },
   { year: "1988", title: "Intervenção e conclusão da nova sede", text: "Diante das condições precárias da antiga casa, foi nomeado um interventor e acelerada a conclusão das novas instalações no Jardim Carlos Borella." },
   { year: "1989", title: "Mudança para a sede própria", text: "Em julho, o Lar mudou-se para o novo prédio, finalizado com a participação da comunidade itatibense." },
-  { year: "1990", title: "Nova etapa de governança", text: "A Justiça determinou o fim da intervenção, a eleição da primeira diretoria e a criação de novo Estatuto Social e regras de conduta." },
+  { year: "1990", title: "Nova etapa de governança e criação do ECA", text: "A Justiça determinou o fim da intervenção, a eleição da primeira diretoria e a criação de novo Estatuto Social e regras de conduta. No mesmo ano, foi instituído o Estatuto da Criança e do Adolescente (ECA), pela Lei nº 8.069, de 13 de julho de 1990, que estabelece a proteção integral de crianças e adolescentes." },
+  { year: "2025", title: "Criação das três casas de acolhimento", text: "Foram criadas as casas Florecer, Gira mundo e Bem-te-vi, com duas unidades em Itatiba e uma em Morungaba, destinadas ao acolhimento de crianças e adolescentes." },
+  { year: "2026", title: "Programa Crê-Ser", text: "O Programa Crê-Ser marca uma nova etapa de cuidado na sede do Lar, com acompanhamento psicossocial de crianças e suas famílias da comunidade itatibense." },
 ] as const;
 
 export default function AboutPage() {
