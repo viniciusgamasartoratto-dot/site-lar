@@ -10,15 +10,9 @@ export const metadata: Metadata = {
 };
 
 const workshops = [
-  { name: "Saber e Crê-Ser", ages: "5 a 17 anos", days: "Segunda de manhã e terça à tarde" },
-  { name: "Semear e Crê-Ser", ages: "3 a 17 anos", days: "Quarta de manhã e segunda à tarde" },
-  { name: "Música", ages: "3 a 17 anos", days: "Sexta de manhã e à tarde" },
-  { name: "Projeto de Vida e Mundo do Trabalho", ages: "14 a 17 anos", days: "Quarta à tarde" },
-  { name: "Informática", ages: "6 a 17 anos", days: "Terça de manhã e quinta à tarde" },
-  { name: "Luderia", ages: "12 a 17 anos", days: "Quarta à tarde" },
-  { name: "Culinária", ages: "6 a 17 anos", days: "Quarta de manhã e à tarde" },
-  { name: "Dança", ages: "6 a 17 anos", days: "Segunda de manhã e quinta à tarde" },
-  { name: "Teatro", ages: "6 a 17 anos", days: "Terça de manhã e segunda à tarde" },
+  "Saber e Crê-Ser", "Semear e Crê-Ser", "Música",
+  "Projeto de Vida e Mundo do Trabalho", "Informática", "Luderia",
+  "Culinária", "Dança", "Teatro", "Artesanato",
 ];
 const careAreas = ["Psicologia", "Fonoaudiologia", "Terapia Ocupacional", "Psicopedagogia"];
 const entryPoints = ["Procura da família", "Saúde", "Escola", "CRAS", "CREAS", "Conselho Tutelar", "Vara da Infância"];
@@ -99,17 +93,17 @@ export default function ProgramPage() {
       </section>
 
       <section className="section section-soft" id="cuidado">
-        <div className="container section-heading-row"><div><p className="eyebrow">Como cuidamos</p><h2>Saúde, aprendizagem e vínculos no mesmo percurso</h2></div><p>O programa busca prevenir o acolhimento, fortalecer vínculos familiares, promover saúde mental, acompanhar a escolaridade e apoiar o desenvolvimento integral.</p></div>
+        <div className="container section-heading-row"><div><p className="eyebrow">Como cuidamos</p><h2>Nossas especialidades</h2></div></div>
         <div className="container cre-care-grid">
-          {careAreas.map((area) => <article className="info-card" key={area}><h3>{area}</h3><p>Uma das especialidades que compõem o atendimento multiprofissional do programa.</p></article>)}
+          {careAreas.map((area) => <article className="info-card" key={area}><h3>{area}</h3></article>)}
         </div>
-        <div className="container cre-care-note"><h3>Grupos com avaliação individual de cada caso</h3><p>O atendimento grupal é predominante, favorecendo convivência, pertencimento e fortalecimento de vínculos. A modalidade de atendimento é definida pela equipe técnica a partir da idade, das necessidades e do contexto de cada criança ou adolescente, com acompanhamento das famílias.</p></div>
       </section>
 
       <section className="section" id="oficinas">
-        <div className="container section-heading-row"><div><p className="eyebrow">Contraturno escolar</p><h2>Oficinas para descobrir, conviver e crescer</h2></div><p>Atividades que estimulam autonomia, criatividade e protagonismo. A grade apresentada tem referência em agosto de 2026, com atividades de segunda a sexta, nos períodos das 8h às 12h e das 13h às 17h.</p></div>
-        <div className="container cre-table-wrap"><table className="cre-workshop-table"><caption>Oficinas e períodos previstos na apresentação institucional</caption><thead><tr><th scope="col">Oficina</th><th scope="col">Faixa etária</th><th scope="col">Períodos</th></tr></thead><tbody>{workshops.map((workshop) => <tr key={workshop.name}><th scope="row">{workshop.name}</th><td>{workshop.ages}</td><td>{workshop.days}</td></tr>)}</tbody></table></div>
-        <p className="container cre-reference-note">A grade semanal também inclui Artesanato na quinta-feira, das 9h às 11h. Consulte a equipe para confirmar horários, faixas etárias e disponibilidade de vagas.</p>
+        <div className="container section-heading-row"><div><p className="eyebrow">Contraturno escolar</p><h2>Nossas oficinas</h2></div></div>
+        <ul className="container cre-workshop-names">
+          {workshops.map((name) => <li key={name}>{name}</li>)}
+        </ul>
       </section>
 
       <section className="section section-soft" id="acesso">
