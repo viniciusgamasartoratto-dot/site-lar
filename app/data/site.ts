@@ -173,7 +173,7 @@ export const programHighlights = [
   {
     number: "01",
     title: "Acesso pela comunidade",
-    text: "O Programa Crê-Ser é aberto à comunidade itatibense e acolhe demandas relacionadas à infância.",
+    text: "O Programa Crê-Ser é aberto à comunidade itatibense e recebe demandas relacionadas à infância.",
   },
   {
     number: "02",
