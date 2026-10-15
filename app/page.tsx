@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBand } from "./components/CtaBand";
-import { BrandSignature } from "./components/BrandSignature";
+import { ProgramHero } from "./components/ProgramHero";
 import { PublishedContent } from "./components/PublishedContent";
 import { HomeCarousel } from "./components/HomeCarousel";
 import { institutionalFacts, programHighlights, structureImages } from "./data/site";
@@ -14,27 +14,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <HomeCarousel><section className="home-hero">
-        <div className="container home-hero-card">
-          <div className="home-hero-copy">
-            
-            <p className="eyebrow eyebrow-light">Programa Crê-Ser</p>
-            <h1>Cuidar hoje<br /><em>Transformar o amanhã</em></h1>
-            <p>No Programa Crê-Ser, crianças e famílias de Itatiba encontram acompanhamento psicossocial, escuta e apoio.</p>
-            <div className="button-row">
-              <Link className="button button-coral" href="/programa-cre-ser">Conheça o Programa Crê-Ser</Link>
-              <Link className="text-link text-link-light" href="/como-ajudar">Descubra como apoiar <span aria-hidden="true">→</span></Link>
-            </div>
-          </div>
-          <div className="home-hero-visual">
-            <img className="hero-photo" src="/images/sobre-maos.jpg" alt="Mãos de crianças reunidas, representando união e cuidado" width="900" height="700" fetchPriority="high" decoding="async" />
-            <div className="program-stamp">
-              <img src="/images/cre-ser-logo.png" alt="Programa Crê-Ser" width="112" height="112" />
-              <p><strong>Uma das principais ações do Lar</strong><span>Proteção em rede para crianças e famílias.</span></p>
-            </div>
-          </div>
-        </div>
-      </section></HomeCarousel>
+      <HomeCarousel><ProgramHero showProgramLink /></HomeCarousel>
 
       <PublishedContent kind="banner" />
       <section className="section intro-section">

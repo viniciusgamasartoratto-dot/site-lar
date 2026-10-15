@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ProgramHeroPhotos } from "../components/ProgramHeroPhotos";
+import { ProgramHero } from "../components/ProgramHero";
+import { programIndicators as indicators } from "../data/program";
 
 import { programSupporters } from "../data/site";
 
@@ -16,12 +17,7 @@ const workshops = [
 ];
 const careAreas = ["Psicologia", "Fonoaudiologia", "Terapia Ocupacional", "Psicopedagogia"];
 const entryPoints = ["Procura da família", "Saúde", "Escola", "CRAS", "CREAS", "Conselho Tutelar", "Vara da Infância"];
-const indicators = [
-  { value: "157", label: "participantes únicos em terapias especiais e/ou contraturno" },
-  { value: "43", label: "participantes no contraturno escolar" },
-  { value: "830", label: "atendimentos em terapias especiais" },
-  { value: "94", label: "orientações familiares" },
-];
+
 const team = [
   ["Coordenação institucional", "1"], ["Gestão", "1"], ["Psicologia", "3"],
   ["Terapia Ocupacional", "1"], ["Fonoaudiologia", "1"], ["Psicopedagogia", "1"],
@@ -39,28 +35,7 @@ const faqs = [
 export default function ProgramPage() {
   return (
     <>
-      <section className="page-hero page-hero-green cre-program-hero" aria-labelledby="cre-hero-title">
-        <ProgramHeroPhotos />
-        <div className="container">
-          <nav className="breadcrumbs" aria-label="Trilha de navegação"><Link href="/">Início</Link><span aria-hidden="true">/</span><span>Programa Crê-Ser</span></nav>
-          <div className="cre-hero-heading">
-            <div>
-              <p className="eyebrow">Programa Crê-Ser</p>
-              <h1 id="cre-hero-title">Cuidar, fortalecer vínculos e ampliar possibilidades</h1>
-              <p className="hero-description">Uma frente preventiva e comunitária do Lar Itatibense da Criança que integra educação, saúde, cultura e apoio às famílias.</p>
-            </div>
-            <div className="cre-hero-symbol"><img src="/images/cre-ser-logo.png" alt="Símbolo do Programa Crê-Ser" width="520" height="520" fetchPriority="high" /></div>
-          </div>
-          <div className="cre-hero-data-heading"><p>O Crê-Ser em números</p><span>Referência: agosto de 2026</span></div>
-          <dl className="cre-hero-stats">
-            <div><dt>Participantes únicos</dt><dd>{indicators[0].value}</dd><p>Em terapias especiais e/ou contraturno</p></div>
-            <div><dt>Na lista de espera</dt><dd>152</dd><p>Distribuição por especialidade</p></div>
-            <div><dt>Atendimentos em terapias</dt><dd>{indicators[2].value}</dd><p>Psicologia, Fonoaudiologia, Terapia Ocupacional e Psicopedagogia</p></div>
-            <div><dt>No contraturno escolar</dt><dd>{indicators[1].value}</dd><p>Participantes em oficinas e atividades</p></div>
-          </dl>
-          <a className="cre-hero-data-link" href="#alcance">Conheça os indicadores do programa <span aria-hidden="true">↓</span></a>
-        </div>
-      </section>
+      <ProgramHero />
 
       <section className="section" id="sobre-o-programa">
         <div className="container program-intro-grid">
