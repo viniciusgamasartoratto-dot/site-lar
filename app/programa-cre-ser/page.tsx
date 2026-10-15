@@ -129,6 +129,15 @@ export default function ProgramPage() {
         <p className="container cre-reference-note">Os indicadores representam medidas diferentes: participantes, atendimentos e orientações. Os 43 participantes do contraturno estão incluídos no total de participantes únicos.</p>
       </section>
 
+      <section className="section section-soft" id="rede-de-atendimento" aria-labelledby="cre-map-title">
+        <div className="container section-heading-row"><div><p className="eyebrow">Alcance territorial</p><h2 id="cre-map-title">A rede de atendimento do Crê-Ser</h2></div></div>
+        <div className="container">
+          <a className="cre-network-map" href="/images/cre-ser-rede-atendimento-escolar.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar mapa da rede de atendimento escolar do Programa Crê-Ser (abre em nova aba)">
+            <img src="/images/cre-ser-rede-atendimento-escolar.jpg" alt="Mapa da rede de atendimento escolar do Programa Crê-Ser em Itatiba, em 2026, com sede, escolas dos eixos de convivência e terapias especiais e área de cobertura" width="1562" height="1189" loading="lazy" />
+          </a>
+          <a className="text-link cre-map-expand" href="/images/cre-ser-rede-atendimento-escolar.jpg" target="_blank" rel="noopener noreferrer">Ampliar mapa <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
       <section className="section section-soft">
         <div className="container section-heading-row"><div><p className="eyebrow">Equipe multiprofissional</p><h2>Diferentes saberes sustentam o cuidado integral</h2></div><p>A apresentação de agosto de 2026 registra uma equipe de 18 profissionais, distribuídos nas funções abaixo.</p></div>
         <dl className="container cre-team-grid">{team.map(([role, count]) => <div key={role}><dt>{role}</dt><dd>{count}</dd></div>)}</dl>
