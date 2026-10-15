@@ -16,7 +16,6 @@ const workshops = [
   "Culinária", "Dança", "Teatro", "Artesanato",
 ];
 const careAreas = ["Psicologia", "Fonoaudiologia", "Terapia Ocupacional", "Psicopedagogia"];
-const entryPoints = ["Procura da família", "Saúde", "Escola", "CRAS", "CREAS", "Conselho Tutelar", "Vara da Infância"];
 
 const team = [
   ["Coordenação institucional", "1"], ["Gestão", "1"], ["Psicologia", "3"],
@@ -83,7 +82,6 @@ export default function ProgramPage() {
 
       <section className="section section-soft" id="acesso">
         <div className="container section-heading-row"><div><p className="eyebrow">Portas abertas</p><h2>O mesmo caminho de avaliação para todas as famílias</h2></div><p>A procura direta da família e os encaminhamentos da rede chegam à mesma avaliação técnica de vulnerabilidade social.</p></div>
-        <ul className="container cre-entry-points" aria-label="Portas de entrada do programa">{entryPoints.map((entry) => <li key={entry}>{entry}</li>)}</ul>
         <div className="container cre-access-grid">
           <article className="info-card"><p className="eyebrow">01</p><h3>Avaliação técnica</h3><p>Realizada pela equipe do programa, por meio da assistência social.</p></article>
           <article className="info-card"><p className="eyebrow">02</p><h3>Vulnerabilidade social</h3><p>Avaliação orientada pelo IVF-PR e pela Tipificação Nacional dos Serviços Socioassistenciais.</p></article>
