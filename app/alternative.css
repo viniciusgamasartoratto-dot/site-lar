@@ -134,3 +134,24 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
 .cre-contact-links>a{overflow-wrap:anywhere;max-width:100%}
 @media(max-width:1000px){.cre-care-grid,.cre-access-grid,.cre-indicators{grid-template-columns:repeat(2,minmax(0,1fr))}.cre-team-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cre-investment-summary{flex-direction:column;align-items:flex-start}.cre-contact-panel{grid-template-columns:1fr}}
 @media(max-width:600px){.cre-care-grid,.cre-access-grid,.cre-indicators{grid-template-columns:1fr}.cre-team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cre-team-grid>div{padding:18px}.cre-workshop-table th,.cre-workshop-table td{padding:14px 12px;min-width:110px;font-size:.9rem}.cre-workshop-table tbody th{min-width:155px}.cre-care-note,.cre-waiting{padding:24px}.cre-contact-links{gap:16px}}
+
+/* Banner do Crê-Ser com símbolo e indicadores institucionais. */
+.cre-program-hero{padding:42px 0 40px}
+.cre-program-hero .breadcrumbs{margin-bottom:24px}
+.cre-hero-heading{display:grid;grid-template-columns:1.6fr .7fr;gap:64px;align-items:center}
+.cre-program-hero h1{font-size:clamp(2rem,3.5vw,3.4rem);line-height:1.12;margin-bottom:20px}
+.cre-program-hero .eyebrow{color:#d5eaf7}
+.cre-program-hero .hero-description{margin-bottom:0;max-width:750px;color:#edf4f8}
+.cre-hero-symbol{display:flex;align-items:center;justify-content:center;padding:20px;background:#fff;border-radius:12px}
+.cre-hero-symbol img{display:block;width:100%;max-width:250px;height:230px;object-fit:contain}
+.cre-hero-data-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:34px 0 16px;color:#fff}
+.cre-hero-data-heading p{margin:0;font-weight:700}
+.cre-hero-data-heading span{font-size:.875rem;color:#d5eaf7}
+.cre-hero-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0}
+.cre-hero-stats>div{display:flex;flex-direction:column;min-width:0;padding:22px;border:1px solid #ffffff40;border-radius:8px;background:#ffffff0d}
+.cre-hero-stats dt{order:1;font-size:1rem;font-weight:700;color:#fff}
+.cre-hero-stats dd{order:0;margin:0 0 10px;font-size:clamp(2.5rem,4vw,3.4rem);font-weight:800;line-height:1;color:#fff}
+.cre-hero-stats p{order:2;margin:10px 0 0;font-size:.85rem;line-height:1.5;color:#d5eaf7}
+.cre-hero-data-link{display:inline-flex;align-items:center;gap:12px;margin-top:20px;color:#fff;font-size:.9rem;font-weight:650;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1000px){.cre-hero-heading{grid-template-columns:1.4fr .7fr;gap:28px}.cre-hero-symbol img{height:200px}.cre-hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.cre-program-hero{padding:28px 0 32px}.cre-hero-heading{grid-template-columns:1fr;gap:24px}.cre-hero-symbol{grid-row:1;justify-self:center;width:180px;padding:16px}.cre-hero-symbol img{height:148px}.cre-program-hero h1{font-size:2rem}.cre-hero-data-heading{align-items:flex-start;flex-direction:column}.cre-hero-stats{gap:10px}.cre-hero-stats>div{padding:16px}.cre-hero-stats dt{font-size:.9rem}.cre-hero-stats p{font-size:.8rem}}
