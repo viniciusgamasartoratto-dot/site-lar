@@ -167,20 +167,12 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
 .cre-hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:0;animation:cre-hero-photo-fade 32s linear infinite}
 .cre-hero-photo:first-child{opacity:1}
 .cre-hero-photo-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,40,62,.88),rgba(8,40,62,.68))}
-.cre-hero-photos.is-paused .cre-hero-photo{animation-play-state:paused}
 .cre-hero-stats>div{background:rgba(12,48,73,.8);border-color:#ffffff60}
-.cre-hero-photo-control{position:absolute;z-index:2;right:24px;top:14px;padding:8px 12px;border:1px solid #ffffff70;border-radius:6px;background:#103e5bcc;color:#fff;font:inherit;font-size:.8rem;cursor:pointer}
-.cre-hero-photo-control:hover{background:#103e5b}
 @keyframes cre-hero-photo-fade{0%,21%{opacity:1}25%,96%{opacity:0}100%{opacity:1}}
-@media(max-width:600px){.cre-program-hero{padding-top:64px}.cre-hero-photo{object-position:center}.cre-hero-photo-overlay{background:rgba(8,40,62,.8)}.cre-hero-photo-control{right:16px}}
-@media(prefers-reduced-motion:reduce){.cre-hero-photo{animation:none;opacity:0}.cre-hero-photo:first-child{opacity:1}.cre-hero-photo-control{display:none}}
+@media(max-width:600px){.cre-program-hero{padding-top:28px}.cre-hero-photo{object-position:center}.cre-hero-photo-overlay{background:rgba(8,40,62,.8)}}
+@media(prefers-reduced-motion:reduce){.cre-hero-photo{animation:none;opacity:0}.cre-hero-photo:first-child{opacity:1}}
 
-.cre-hero-photo-toggle:checked~.cre-hero-photos .cre-hero-photo{animation-play-state:paused}
-.cre-photos-resume{display:none}
-.cre-hero-photo-toggle:checked~.cre-hero-photo-control .cre-photos-resume{display:inline}
-.cre-hero-photo-toggle:checked~.cre-hero-photo-control .cre-photos-pause{display:none}
-.cre-hero-photo-toggle:focus-visible~.cre-hero-photo-control{outline:3px solid #fff;outline-offset:4px}
-@media(prefers-reduced-motion:reduce){.cre-hero-photo-toggle{display:none}}
+
 
 /* Listas objetivas de especialidades e oficinas. */
 .cre-care-grid .info-card{display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 20px}
