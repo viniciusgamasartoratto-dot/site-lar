@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ProgramHeroPhotos } from "../components/ProgramHeroPhotos";
 
-import { programSupporters, structureImages } from "../data/site";
+import { programSupporters } from "../data/site";
 
 export const metadata: Metadata = {
   title: "Programa Crê-Ser",
@@ -139,12 +139,7 @@ export default function ProgramPage() {
         <dl className="container cre-team-grid">{team.map(([role, count]) => <div key={role}><dt>{role}</dt><dd>{count}</dd></div>)}</dl>
       </section>
 
-      <section className="section">
-        <div className="container section-heading-row"><div><p className="eyebrow">Nossa sede</p><h2>Espaços para as atividades do programa</h2></div></div>
-        <div className="container program-gallery">{structureImages.map((image) => <figure key={image.src}><img src={image.src} alt={image.alt} width="720" height="540" loading="lazy" /></figure>)}</div>
-      </section>
-
-      <section className="section section-soft" id="empresas-apoiadoras" aria-labelledby="supporters-title">
+<section className="section section-soft" id="empresas-apoiadoras" aria-labelledby="supporters-title">
         <div className="container section-heading centered-heading"><p className="eyebrow">Patrocínio e parcerias</p><h2 id="supporters-title">Juntos pelo Programa Crê-Ser</h2><p className="section-lead">O investimento social privado fortalece o cuidado integral e a continuidade do programa.</p></div>
         <div className="container"><article className="program-main-sponsor" aria-labelledby="althaia-title">
           <a className="program-main-sponsor-logo" href="https://althaia.com.br/instituto-althaia/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer o Instituto Althaia (abre em nova aba)"><img src="/images/instituto-althaia.png" alt="Instituto Althaia" width="1272" height="545" loading="lazy" /></a>
