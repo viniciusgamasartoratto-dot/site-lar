@@ -33,7 +33,7 @@ const faqs = [
   { question: "Como é definido o ingresso?", answer: "A equipe avalia a vulnerabilidade social, a modalidade de atendimento, a disponibilidade de vagas e a adesão da família. A avaliação pode resultar em ingresso, lista de espera ou encaminhamento a outro serviço da rede." },
   { question: "Os atendimentos são em grupo ou individuais?", answer: "O atendimento grupal é o formato predominante. A equipe técnica avalia idade, necessidades e contexto de cada criança ou adolescente para definir a modalidade adequada." },
   { question: "O Crê-Ser é o serviço de acolhimento do Lar?", answer: "O Crê-Ser é uma iniciativa preventiva e comunitária do Lar, distinta do Serviço de Acolhimento Institucional para Crianças e Adolescentes (SAICA). Seu trabalho busca fortalecer vínculos e prevenir situações que possam levar ao acolhimento." },
-  { question: "Como confirmar horários e vagas?", answer: "Entre em contato pelo telefone (11) 4534-2416 ou pelo e-mail projetocreserlaritatibense@gmail.com. A grade e os números apresentados nesta página têm como referência a apresentação institucional de agosto de 2026." },
+  { question: "Como confirmar horários e vagas?", answer: "Entre em contato pelo telefone (11) 4534-2416 ou pelo e-mail projetocreserlaritatibense@gmail.com." },
 ];
 
 export default function ProgramPage() {
@@ -54,7 +54,7 @@ export default function ProgramPage() {
           <div className="cre-hero-data-heading"><p>O Crê-Ser em números</p><span>Referência: agosto de 2026</span></div>
           <dl className="cre-hero-stats">
             <div><dt>Participantes únicos</dt><dd>{indicators[0].value}</dd><p>Em terapias especiais e/ou contraturno</p></div>
-            <div><dt>Na lista de espera</dt><dd>152</dd><p>Total apresentado por especialidade</p></div>
+            <div><dt>Na lista de espera</dt><dd>152</dd><p>Distribuição por especialidade</p></div>
             <div><dt>Atendimentos em terapias</dt><dd>{indicators[2].value}</dd><p>Psicologia, Fonoaudiologia, Terapia Ocupacional e Psicopedagogia</p></div>
             <div><dt>No contraturno escolar</dt><dd>{indicators[1].value}</dd><p>Participantes em oficinas e atividades</p></div>
           </dl>
@@ -119,9 +119,9 @@ export default function ProgramPage() {
       </section>
 
       <section className="section" id="alcance">
-        <div className="container section-heading-row"><div><p className="eyebrow">Nosso alcance · Agosto de 2026</p><h2>Números que mostram a dimensão do cuidado</h2></div><p>Dados da apresentação institucional, com referência em agosto de 2026.</p></div>
+        <div className="container section-heading-row"><div><p className="eyebrow">Nosso alcance · Agosto de 2026</p><h2>Números que mostram a dimensão do cuidado</h2></div><p>Indicadores de atendimento e acompanhamento familiar de agosto de 2026.</p></div>
         <div className="container cre-indicators">{indicators.map((indicator) => <article key={indicator.label}><strong>{indicator.value}</strong><p>{indicator.label}</p></article>)}</div>
-        <div className="container cre-waiting"><h3>Lista de espera por especialidade</h3><p>Psicologia: 84 · Psicopedagogia: 42 · Fonoaudiologia: 8 · Terapia Ocupacional: 18</p><p><strong>Total apresentado: 152</strong></p></div>
+        <div className="container cre-waiting"><h3>Lista de espera por especialidade</h3><p>Psicologia: 84 · Psicopedagogia: 42 · Fonoaudiologia: 8 · Terapia Ocupacional: 18</p><p><strong>Total na lista de espera: 152</strong></p></div>
         <p className="container cre-reference-note">Os indicadores representam medidas diferentes: participantes, atendimentos e orientações. Os 43 participantes do contraturno estão incluídos no total de participantes únicos.</p>
       </section>
 
@@ -135,7 +135,7 @@ export default function ProgramPage() {
         </div>
       </section>
       <section className="section section-soft">
-        <div className="container section-heading-row"><div><p className="eyebrow">Equipe multiprofissional</p><h2>Diferentes saberes sustentam o cuidado integral</h2></div><p>A apresentação de agosto de 2026 registra uma equipe de 18 profissionais, distribuídos nas funções abaixo.</p></div>
+        <div className="container section-heading-row"><div><p className="eyebrow">Equipe multiprofissional</p><h2>Diferentes saberes sustentam o cuidado integral</h2></div><p>Equipe de 18 profissionais, distribuídos nas funções abaixo. Dados de agosto de 2026.</p></div>
         <dl className="container cre-team-grid">{team.map(([role, count]) => <div key={role}><dt>{role}</dt><dd>{count}</dd></div>)}</dl>
       </section>
 
@@ -146,11 +146,11 @@ export default function ProgramPage() {
           <div className="program-main-sponsor-copy"><p className="eyebrow">Patrocínio em destaque</p><h3 id="althaia-title">Instituto Althaia</h3><p className="program-sponsor-status">Um dos nossos principais patrocinadores</p><p>Parceiro na consolidação do Crê-Ser, o Instituto Althaia viabilizou a contratação de profissional especializado e apoia o cuidado integral de crianças, adolescentes e suas famílias.</p><a className="text-link" href="https://althaia.com.br/instituto-althaia/" target="_blank" rel="noopener noreferrer">Conheça o Instituto Althaia <span aria-hidden="true">↗</span></a></div>
         </article></div>
         {programSupporters.length > 0 && <div className="container program-supporters-grid">{programSupporters.map((company) => <article className="program-supporter" key={company.name}>{company.logo && <img src={company.logo} alt={company.name} width="220" height="100" loading="lazy" />}<h3>{company.name}</h3>{company.description && <p>{company.description}</p>}{company.url && <a className="text-link" href={company.url} target="_blank" rel="noopener noreferrer">Conhecer a empresa ↗</a>}</article>)}</div>}
-        <div className="container section-heading-row cre-partnership-heading"><div><p className="eyebrow">Oportunidades de parceria</p><h2>Chegar, permanecer e ter um espaço adequado</h2></div><p>Prioridades e estimativas apresentadas em agosto de 2026. A parceria pode ser integral, parcial ou organizada por eixo.</p></div>
+        <div className="container section-heading-row cre-partnership-heading"><div><p className="eyebrow">Oportunidades de parceria</p><h2>Chegar, permanecer e ter um espaço adequado</h2></div><p>Prioridades e estimativas de agosto de 2026. A parceria pode ser integral, parcial ou organizada por eixo.</p></div>
         <div className="container cards-3 cre-partnership-cards">
-          <article className="info-card"><p className="eyebrow">01 · Chegar</p><h3>Transporte</h3><p>O material identifica 38 participantes com barreiras de transporte: 33 sem conseguir frequentar e 5 com participação esporádica. O estudo de rotas contempla 17 escolas de origem.</p><p className="cre-investment">R$ 15.000/mês</p><p>Estimativa de R$ 180.000 por ano, com capacidade da frota para até 70 crianças.</p></article>
+          <article className="info-card"><p className="eyebrow">01 · Chegar</p><h3>Transporte</h3><p>Em agosto de 2026, 38 participantes enfrentavam barreiras de transporte: 33 sem conseguir frequentar e 5 com participação esporádica. O estudo de rotas contempla 17 escolas de origem.</p><p className="cre-investment">R$ 15.000/mês</p><p>Estimativa de R$ 180.000 por ano, com capacidade da frota para até 70 crianças.</p></article>
           <article className="info-card"><p className="eyebrow">02 · Permanecer</p><h3>Alimentação</h3><p>Lanches durante a permanência no programa apoiam a participação e a continuidade da rotina do contraturno.</p><p className="cre-investment">R$ 9.000/mês</p><p>Estimativa para 60 crianças: R$ 150 por criança ao mês e R$ 108.000 por ano.</p></article>
-          <article className="info-card"><p className="eyebrow">03 · Acolher</p><h3>Requalificação do espaço</h3><p>Adequações para ampliar a qualidade, a segurança e as condições das atividades. A apresentação registra um parceiro privado para assumir parte dos custos e um orçamento global em consolidação.</p><p>Novos parceiros podem compor os recursos necessários para concluir as melhorias.</p></article>
+          <article className="info-card"><p className="eyebrow">03 · Acolher</p><h3>Requalificação do espaço</h3><p>Adequações para ampliar a qualidade, a segurança e as condições das atividades. Em agosto de 2026, parte dos custos já contava com um parceiro privado, enquanto o orçamento global estava em consolidação.</p><p>Novos parceiros podem compor os recursos necessários para concluir as melhorias.</p></article>
         </div>
         <div className="container cre-investment-summary"><div><h3>Transporte e alimentação</h3><p>Estimativa conjunta de <strong>R$ 24.000/mês</strong> ou <strong>R$ 288.000/ano</strong>. O orçamento da reforma é separado.</p></div><a className="button button-green" href="#contato-cre-ser">Conversar sobre uma parceria</a></div>
       </section>
