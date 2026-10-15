@@ -22,4 +22,4 @@ C:\Users\ADM\Documents\ChatGPT\Site lar\backups\cre-ser-antes-da-apresentacao-20
 
 Contém arquivo ZIP do código anterior, fonte da página anterior e cópia navegável do site estático anterior. A cópia não está publicada.
 
-A apresentação original permanece fora dos arquivos públicos. As fotografias usadas na página continuam sendo as duas imagens da sede já aprovadas; as fotografias de participantes contidas na apresentação não foram adicionadas.
+A apresentação original permanece fora dos arquivos públicos. Em 15/10/2026, a pedido do usuário, quatro fotografias de atividades das páginas 18 a 20 da apresentação foram adicionadas ao fundo rotativo do banner. O símbolo, os textos e os indicadores permanecem fixos. A galeria da sede mantém as duas imagens anteriores.

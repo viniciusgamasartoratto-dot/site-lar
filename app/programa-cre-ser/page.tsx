@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ProgramHeroPhotos } from "../components/ProgramHeroPhotos";
 
 import { programSupporters, structureImages } from "../data/site";
 
@@ -45,6 +46,7 @@ export default function ProgramPage() {
   return (
     <>
       <section className="page-hero page-hero-green cre-program-hero" aria-labelledby="cre-hero-title">
+        <ProgramHeroPhotos />
         <div className="container">
           <nav className="breadcrumbs" aria-label="Trilha de navegação"><Link href="/">Início</Link><span aria-hidden="true">/</span><span>Programa Crê-Ser</span></nav>
           <div className="cre-hero-heading">
