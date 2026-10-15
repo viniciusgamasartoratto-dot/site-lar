@@ -59,7 +59,7 @@ export default function ProgramPage() {
 
       <section className="section">
         <div className="container section-heading-row"><div><p className="eyebrow">Nossa trajetória</p><h2>Uma resposta construída a partir do cuidado</h2></div></div>
-        <div className="container cards-3">
+        <div className="container cards-3 cre-history-grid">
           <article className="info-card"><p className="eyebrow">01 · A necessidade</p><h3>Atendimento psicológico estruturado</h3><p>O cuidado às crianças e adolescentes acolhidos revelou a necessidade de acompanhamento psicológico. A resposta começou com estagiários de Psicologia, sob coordenação técnica da Dra. Cláudia Archanjo.</p></article>
           <article className="info-card"><p className="eyebrow">02 · A estruturação</p><h3>Recursos próprios e parceria acadêmica</h3><p>O Lar assumiu o custeio da equipe e formalizou o estágio remunerado por meio de parceria acadêmica, orientada pelo modelo de clínica ampliada. Essa etapa também contou com apoio temporário do CMDCA e do CONDECA.</p></article>
           <article className="info-card"><p className="eyebrow">03 · A consolidação</p><h3>Uma parceria estratégica</h3><p>O Instituto Althaia viabilizou a contratação de profissional especializado. A demanda de crianças egressas do acolhimento consolidou a proposta que deu origem ao Programa Crê-Ser.</p></article>

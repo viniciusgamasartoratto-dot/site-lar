@@ -184,3 +184,9 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
 
 .cre-home-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:20px;margin-top:24px}
 .cre-home-hero-actions .cre-hero-data-link{margin-top:0}
+
+/* Títulos e descrições da trajetória alinhados entre os três cartões. */
+.cre-history-grid{row-gap:0}
+.cre-history-grid>.info-card{display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0}
+.cre-history-grid>.info-card>p:last-child{margin-bottom:0}
+@media(max-width:900px){.cre-history-grid{row-gap:18px}.cre-history-grid>.info-card{display:block;grid-row:auto}}
