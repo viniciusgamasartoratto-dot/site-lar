@@ -3,4 +3,5 @@ export const programIndicators = [
   { value: "43", label: "participantes no contraturno escolar" },
   { value: "830", label: "atendimentos em terapias especiais" },
   { value: "94", label: "orientações familiares" },
+  { value: "152", label: "na lista de espera" },
 ];

@@ -111,7 +111,7 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
 .cre-reference-note{margin-top:24px;color:var(--muted);font-size:.9rem}
 .cre-entry-points{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;list-style:none;margin-bottom:32px}
 .cre-entry-points li{padding:10px 18px;border:1px solid #b9d1e1;border-radius:99px;background:#fff;color:var(--brand-blue);font-weight:600}
-.cre-indicators{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.cre-indicators{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
 .cre-indicators article{padding:30px 24px;background:var(--brand-blue);border-radius:8px;color:#fff}
 .cre-indicators strong{font-size:clamp(2.5rem,4vw,3.8rem);line-height:1.1}
 .cre-indicators p{margin:18px 0 0;color:#fff}

@@ -88,14 +88,11 @@ export default function ProgramPage() {
           <article className="info-card"><p className="eyebrow">03</p><h3>Disponibilidade de vagas</h3><p>Verificada no momento de cada procura ou encaminhamento recebido.</p></article>
           <article className="info-card"><p className="eyebrow">04</p><h3>Adesão da família</h3><p>O envolvimento e a participação da família são essenciais ao trabalho de convivência proposto.</p></article>
         </div>
-        <p className="container cre-reference-note">Após a avaliação, o percurso pode ser o ingresso, a lista de espera ou o encaminhamento a outro serviço da rede.</p>
       </section>
 
       <section className="section" id="alcance">
         <div className="container section-heading-row"><div><p className="eyebrow">Nosso alcance · Agosto de 2026</p><h2>Números que mostram a dimensão do cuidado</h2></div><p>Indicadores de atendimento e acompanhamento familiar de agosto de 2026.</p></div>
         <div className="container cre-indicators">{indicators.map((indicator) => <article key={indicator.label}><strong>{indicator.value}</strong><p>{indicator.label}</p></article>)}</div>
-        <div className="container cre-waiting"><h3>Lista de espera por especialidade</h3><p>Psicologia: 84 · Psicopedagogia: 42 · Fonoaudiologia: 8 · Terapia Ocupacional: 18</p><p><strong>Total na lista de espera: 152</strong></p></div>
-        <p className="container cre-reference-note">Os indicadores representam medidas diferentes: participantes, atendimentos e orientações. Os 43 participantes do contraturno estão incluídos no total de participantes únicos.</p>
       </section>
 
       <section className="section section-soft" id="rede-de-atendimento" aria-labelledby="cre-map-title">
