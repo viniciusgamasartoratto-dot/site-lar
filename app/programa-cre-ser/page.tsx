@@ -17,12 +17,6 @@ const workshops = [
 ];
 const careAreas = ["Psicologia", "Fonoaudiologia", "Terapia Ocupacional", "Psicopedagogia"];
 
-const team = [
-  ["Coordenação institucional", "1"], ["Gestão", "2"], ["Psicologia", "2"],
-  ["Terapia Ocupacional", "1"], ["Fonoaudiologia", "1"], ["Psicopedagogia", "1"],
-  ["Assistência Social", "1"], ["Educadores sociais", "3"], ["Oficineiros", "5"],
-  ["Recepção e administrativo", "1"], ["Estagiárias de Psicologia", "3"],
-];
 const faqs = [
   { question: "É necessário encaminhamento para procurar o Crê-Ser?", answer: "A família pode procurar diretamente o programa. Também são recebidos encaminhamentos da saúde, escola, CRAS, CREAS, Conselho Tutelar e Vara da Infância. Todas as portas de entrada seguem o mesmo processo de avaliação técnica." },
   { question: "Como é definido o ingresso?", answer: "A equipe avalia a vulnerabilidade social, a modalidade de atendimento, a disponibilidade de vagas e a adesão da família. A avaliação pode resultar em ingresso, lista de espera ou encaminhamento a outro serviço da rede." },
@@ -103,10 +97,6 @@ export default function ProgramPage() {
           </a>
           <a className="text-link cre-map-expand" href="/images/cre-ser-rede-atendimento-escolar.jpg" target="_blank" rel="noopener noreferrer">Ampliar mapa <span aria-hidden="true">↗</span></a>
         </div>
-      </section>
-      <section className="section section-soft">
-        <div className="container section-heading-row"><div><p className="eyebrow">Equipe multiprofissional</p><h2>Diferentes saberes sustentam o cuidado integral</h2></div><p>Equipe de 18 profissionais e 3 estagiárias de Psicologia, distribuídos nas funções abaixo. Dados de setembro de 2026.</p></div>
-        <dl className="container cre-team-grid">{team.map(([role, count]) => <div key={role}><dt>{role}</dt><dd>{count}</dd></div>)}</dl>
       </section>
 
 <section className="section section-soft" id="empresas-apoiadoras" aria-labelledby="supporters-title">
