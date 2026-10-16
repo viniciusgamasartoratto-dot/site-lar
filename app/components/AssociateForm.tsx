@@ -31,7 +31,7 @@ export function AssociateForm() {
           {["Mensal", "Trimestral", "Semestral", "Anual"].map(value => <label key={value}><input type="radio" name="frequencia" value={value} required /><span>{value}</span></label>)}
         </div></fieldset>
         <fieldset><legend><span>04</span> Confirmação</legend><label className="associate-signature" htmlFor="associate-assinatura"><span>Nome para confirmação da ficha *</span><input id="associate-assinatura" name="assinatura" type="text" required autoComplete="name" /></label><p>Este compromisso é voluntário e sua contribuição depende exclusivamente de sua vontade.</p></fieldset>
-        <div className="associate-submit"><p>Ao enviar, seus dados serão encaminhados pelo FormSubmit ao responsável pelo cadastro, temporariamente em viniciusgamasartoratto@gmail.com. O serviço mantém os envios por até 30 dias. Na próxima tela, conclua a verificação de segurança, se solicitada.</p><button className="button button-coral" type="submit">Enviar ficha</button><p id="associate-status" role="status" aria-live="polite" /></div>
+        <div className="associate-submit"><button className="button button-coral" type="submit">Enviar ficha</button><p id="associate-status" role="status" aria-live="polite" /></div>
         <noscript><p>Você também pode entrar em contato pelo e-mail <a href={`mailto:${site.email}`}>{site.email}</a>.</p></noscript>
       </form>
       <script src="/scripts/associate-form.js" defer data-associate-form="true" />
