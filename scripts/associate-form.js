@@ -14,9 +14,9 @@
   form.elements.namedItem('inscricao').value = [today.getFullYear(), String(today.getMonth()+1).padStart(2,'0'), String(today.getDate()).padStart(2,'0')].join('-');
   form.elements.namedItem('nascimento').max = form.elements.namedItem('inscricao').value;
   form.addEventListener('submit', event => {
-    event.preventDefault();
+
     syncValue();
-    if (!form.reportValidity()) return;
+    if (!form.reportValidity()) { event.preventDefault(); return; }
     const data = new FormData(form);
     const get = name => String(data.get(name) || '').trim();
     const date = name => get(name) ? get(name).split('-').reverse().join('/') : 'Não informado';
@@ -31,8 +31,14 @@
       `Nome para confirmação da ficha: ${get('assinatura')}`,
       'Este compromisso é voluntário e sua contribuição depende exclusivamente de sua vontade.'
     ].join('\r\n');
-    const url = `mailto:${form.dataset.email}?subject=${encodeURIComponent('Ficha de associado — ' + get('nome'))}&body=${encodeURIComponent(body)}`;
-    window.location.href = url;
-    document.getElementById('associate-status').textContent = 'A mensagem foi preparada. Conclua o envio no seu aplicativo de e-mail. Se ele não abrir, entre em contato com ' + form.dataset.email + '.';
+    let summary = form.querySelector('input[name="Resumo da ficha"]');
+    if (!summary) {
+      summary = document.createElement('input');
+      summary.type = 'hidden';
+      summary.name = 'Resumo da ficha';
+      form.appendChild(summary);
+    }
+    summary.value = body;
+    document.getElementById('associate-status').textContent = 'Encaminhando para a confirmação de envio…';
   });
 })();
