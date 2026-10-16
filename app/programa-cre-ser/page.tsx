@@ -18,17 +18,17 @@ const workshops = [
 const careAreas = ["Psicologia", "Fonoaudiologia", "Terapia Ocupacional", "Psicopedagogia"];
 
 const team = [
-  ["Coordenação institucional", "1"], ["Gestão", "1"], ["Psicologia", "3"],
+  ["Coordenação institucional", "1"], ["Gestão", "2"], ["Psicologia", "2"],
   ["Terapia Ocupacional", "1"], ["Fonoaudiologia", "1"], ["Psicopedagogia", "1"],
   ["Assistência Social", "1"], ["Educadores sociais", "3"], ["Oficineiros", "5"],
-  ["Recepção e administrativo", "1"],
+  ["Recepção e administrativo", "1"], ["Estagiárias de Psicologia", "3"],
 ];
 const faqs = [
   { question: "É necessário encaminhamento para procurar o Crê-Ser?", answer: "A família pode procurar diretamente o programa. Também são recebidos encaminhamentos da saúde, escola, CRAS, CREAS, Conselho Tutelar e Vara da Infância. Todas as portas de entrada seguem o mesmo processo de avaliação técnica." },
   { question: "Como é definido o ingresso?", answer: "A equipe avalia a vulnerabilidade social, a modalidade de atendimento, a disponibilidade de vagas e a adesão da família. A avaliação pode resultar em ingresso, lista de espera ou encaminhamento a outro serviço da rede." },
   { question: "Os atendimentos são em grupo ou individuais?", answer: "O atendimento grupal é o formato predominante. A equipe técnica avalia idade, necessidades e contexto de cada criança ou adolescente para definir a modalidade adequada." },
   { question: "O Crê-Ser é o serviço de acolhimento do Lar?", answer: "O Crê-Ser é uma iniciativa preventiva e comunitária do Lar, distinta do Serviço de Acolhimento Institucional para Crianças e Adolescentes (SAICA). Seu trabalho busca fortalecer vínculos e prevenir situações que possam levar ao acolhimento." },
-  { question: "Como confirmar horários e vagas?", answer: "Entre em contato pelo telefone (11) 4534-2416 ou pelo e-mail projetocreserlaritatibense@gmail.com." },
+  { question: "Como confirmar horários e vagas?", answer: "Entre em contato pelo telefone (11) 4534-2416 ou pelo e-mail projetocreser@laritatibense.org.br." },
 ];
 
 export default function ProgramPage() {
@@ -91,7 +91,7 @@ export default function ProgramPage() {
       </section>
 
       <section className="section" id="alcance">
-        <div className="container section-heading-row"><div><p className="eyebrow">Nosso alcance · Agosto de 2026</p><h2>Números que mostram a dimensão do cuidado</h2></div><p>Indicadores de atendimento e acompanhamento familiar de agosto de 2026.</p></div>
+        <div className="container section-heading-row"><div><p className="eyebrow">Nosso alcance · Setembro de 2026</p><h2>Números que mostram a dimensão do cuidado</h2></div><p>Indicadores de atendimento e acompanhamento familiar de setembro de 2026.</p></div>
         <div className="container cre-indicators">{indicators.map((indicator) => <article key={indicator.label}><strong>{indicator.value}</strong><p>{indicator.label}</p></article>)}</div>
       </section>
 
@@ -105,7 +105,7 @@ export default function ProgramPage() {
         </div>
       </section>
       <section className="section section-soft">
-        <div className="container section-heading-row"><div><p className="eyebrow">Equipe multiprofissional</p><h2>Diferentes saberes sustentam o cuidado integral</h2></div><p>Equipe de 18 profissionais, distribuídos nas funções abaixo. Dados de agosto de 2026.</p></div>
+        <div className="container section-heading-row"><div><p className="eyebrow">Equipe multiprofissional</p><h2>Diferentes saberes sustentam o cuidado integral</h2></div><p>Equipe de 18 profissionais e 3 estagiárias de Psicologia, distribuídos nas funções abaixo. Dados de setembro de 2026.</p></div>
         <dl className="container cre-team-grid">{team.map(([role, count]) => <div key={role}><dt>{role}</dt><dd>{count}</dd></div>)}</dl>
       </section>
 
@@ -131,7 +131,7 @@ export default function ProgramPage() {
       </section>
 
       <section className="section cre-contact-section" id="contato-cre-ser">
-        <div className="container cre-contact-panel"><div><p className="eyebrow">Fale com o Crê-Ser</p><h2>Uma conversa pode abrir novos caminhos</h2><p>Para procurar atendimento, esclarecer o encaminhamento ou construir uma parceria, entre em contato com a equipe do programa.</p></div><div className="cre-contact-links"><a className="button button-green" href="tel:+551145342416">(11) 4534-2416</a><a href="mailto:projetocreserlaritatibense@gmail.com">projetocreserlaritatibense@gmail.com</a><Link className="text-link" href="/como-ajudar">Conheça outras formas de apoiar →</Link></div></div>
+        <div className="container cre-contact-panel"><div><p className="eyebrow">Fale com o Crê-Ser</p><h2>Uma conversa pode abrir novos caminhos</h2><p>Para procurar atendimento, esclarecer o encaminhamento ou construir uma parceria, entre em contato com a equipe do programa.</p></div><div className="cre-contact-links"><a className="button button-green" href="tel:+551145342416">(11) 4534-2416</a><a href="mailto:projetocreser@laritatibense.org.br">projetocreser@laritatibense.org.br</a><Link className="text-link" href="/como-ajudar">Conheça outras formas de apoiar →</Link></div></div>
       </section>
     </>
   );

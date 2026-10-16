@@ -16,10 +16,10 @@ export function ProgramHero({ showProgramLink = false }: { showProgramLink?: boo
             </div>
             <div className="cre-hero-symbol"><img src="/images/cre-ser-logo.png" alt="Símbolo do Programa Crê-Ser" width="520" height="520" fetchPriority="high" /></div>
           </div>
-          <div className="cre-hero-data-heading"><p>O Crê-Ser em números</p><span>Referência: agosto de 2026</span></div>
+          <div className="cre-hero-data-heading"><p>O Crê-Ser em números</p><span>Referência: setembro de 2026</span></div>
           <dl className="cre-hero-stats">
-            <div><dt>Participantes únicos</dt><dd>{indicators[0].value}</dd><p>Em terapias especiais e/ou contraturno</p></div>
-            <div><dt>Na lista de espera</dt><dd>{indicators[4].value}</dd><p>Distribuição por especialidade</p></div>
+            <div><dt>Crianças e adolescentes</dt><dd>{indicators[0].value}</dd><p>Em terapias especiais, contraturno e oficinas</p></div>
+            <div><dt>Na lista de espera</dt><dd>{indicators[4].value}</dd><p>Aguardando terapias especiais</p></div>
             <div><dt>Atendimentos em terapias</dt><dd>{indicators[2].value}</dd><p>Psicologia, Fonoaudiologia, Terapia Ocupacional e Psicopedagogia</p></div>
             <div><dt>No contraturno escolar</dt><dd>{indicators[1].value}</dd><p>Participantes em oficinas e atividades</p></div>
           </dl>

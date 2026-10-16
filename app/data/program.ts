@@ -1,7 +1,7 @@
 export const programIndicators = [
-  { value: "157", label: "participantes únicos em terapias especiais e/ou contraturno" },
-  { value: "43", label: "participantes no contraturno escolar" },
-  { value: "830", label: "atendimentos em terapias especiais" },
-  { value: "94", label: "orientações familiares" },
-  { value: "152", label: "na lista de espera" },
+  { value: "181", label: "crianças e adolescentes atendidos pelo programa" },
+  { value: "55", label: "participantes no contraturno escolar" },
+  { value: "876", label: "atendimentos em terapias especiais" },
+  { value: "153", label: "orientações familiares" },
+  { value: "194", label: "na lista de espera" },
 ];
