@@ -73,7 +73,7 @@ export default function Home() {
           <div><p className="eyebrow">Como ajudar</p><h2>Há muitas formas de estar presente</h2></div>
           <p>Doações e parcerias ajudam o Lar a manter um cuidado contínuo e responsável.</p>
         </div>
-        <div className="container cards-2">
+        <div className="container cards-2 help-options">
           <article className="help-card help-card-green"><h3>Faça uma doação</h3><p>Contribua financeiramente ou converse com o Lar sobre os materiais necessários no momento.</p><Link href="/como-ajudar#doar">Quero doar →</Link></article>
           <article className="help-card help-card-blue"><h3>Construa uma parceria</h3><p>Aproxime sua empresa ou especialidade profissional de uma instituição comprometida com a infância.</p><Link href="/como-ajudar#parcerias">Quero ser parceiro →</Link></article>
         </div>

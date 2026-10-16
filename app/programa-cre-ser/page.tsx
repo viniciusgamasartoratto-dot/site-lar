@@ -51,7 +51,7 @@ export default function ProgramPage() {
 
       <section className="section section-soft">
         <div className="container section-heading-row"><div><p className="eyebrow">Duas frentes, uma missão</p><h2>Proteção e prevenção se complementam</h2></div></div>
-        <div className="container cards-2">
+        <div className="container cards-2 cre-fronts-grid">
           <article className="info-card"><p className="eyebrow">SAICA</p><h3>Acolhimento institucional</h3><p>Serviço de proteção especial articulado ao sistema de assistência social e ao Judiciário, destinado ao acolhimento por medida protetiva e encaminhamento judicial.</p></article>
           <article className="info-card"><p className="eyebrow">Crê-Ser</p><h3>Atuação preventiva e comunitária</h3><p>Iniciativa própria do Lar, viabilizada por investimento social privado, que fortalece vínculos familiares e atua na prevenção de sua ruptura. Complementa a missão institucional e não integra o SAICA.</p></article>
         </div>

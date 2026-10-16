@@ -16,8 +16,8 @@ export default function TransparencyPage() {
         <PublishedContent kind="pdf" />
         <div className="container document-toolbar"><p>{transparencyDocuments.length} documentos do acervo inicial</p><span className="document-category">PDFs e acervo institucional</span></div>
         <div className="container document-grid">
-          {transparencyDocuments.map((document) => (
-            <article className={`document-card${document.source === "local" ? " document-card-featured" : ""}`} key={document.title}>
+          {transparencyDocuments.map((document, index) => (
+            <article className={`document-card${index === 0 ? " document-card-featured" : ""}`} key={document.title}>
               <span className="document-category">{document.category}</span>
               <h2>{document.title}</h2>
               <p>{document.description}</p>

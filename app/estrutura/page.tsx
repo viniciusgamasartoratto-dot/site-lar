@@ -26,7 +26,7 @@ export default function StructurePage() {
       </section>
       <section className="section">
         <div className="container section-heading"><p className="eyebrow">Registros da sede</p><h2>O prédio da sede em imagens</h2></div>
-        <div className="container structure-gallery" style={{ marginTop: 60 }}>
+        <div className="container structure-gallery">
           {structureImages.map((image) => <figure key={image.src}><img src={image.src} alt={image.alt} width="900" height="680" loading="lazy" decoding="async" /></figure>)}
         </div>
       </section>
