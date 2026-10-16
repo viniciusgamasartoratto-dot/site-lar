@@ -190,3 +190,10 @@ body{background:#fff}h1,h2,h3{font-family:var(--font-display);font-weight:750;le
 .cre-history-grid>.info-card{display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0}
 .cre-history-grid>.info-card>p:last-child{margin-bottom:0}
 @media(max-width:900px){.cre-history-grid{row-gap:18px}.cre-history-grid>.info-card{display:block;grid-row:auto}}
+
+/* Mesmas linhas de referência para os cartões do fluxo de acesso. */
+.cre-access-grid{row-gap:0}
+.cre-access-grid>.info-card{display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0}
+.cre-access-grid>.info-card>p:last-child{margin-bottom:0}
+@media(max-width:1000px){.cre-access-grid{row-gap:18px}}
+@media(max-width:600px){.cre-access-grid>.info-card{display:block;grid-row:auto}}
