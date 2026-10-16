@@ -33,7 +33,7 @@ function pageUrl(pathname) {
 
 function rewriteHtml(html) {
   return html
-    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, tag => tag.includes('src="/scripts/associate-form.js"') && tag.includes('data-associate-form="true"') ? tag : "")
     .replace(/<link\b[^>]*rel=["']modulepreload["'][^>]*>/gi, "")
     .replace(/\b(href|src)="\/([^\"]*)"/g, (match, attribute, target) => {
       if (!target) return `${attribute}="${repositoryPath}/"`;

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AssociateForm } from "../components/AssociateForm";
 import { PageHero } from "../components/PageHero";
 
 export const metadata: Metadata = {
@@ -42,6 +43,7 @@ export default function HelpPage() {
         </div>
       </section>
 
+<AssociateForm />
 <section className="section">
         <div className="container transparency-card">
           <div><p className="eyebrow eyebrow-light">Transparência</p><h2>Acompanhe os documentos do Lar</h2><p>Consulte balanços, estatuto, certidões, certificados e outros registros institucionais.</p></div>
