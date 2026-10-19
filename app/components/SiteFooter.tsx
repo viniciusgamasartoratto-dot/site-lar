@@ -49,7 +49,7 @@ export function SiteFooter() {
         <div>
           <h2>Fale com o Lar</h2>
           <address>
-            <p>Sede administrativa e Programa Crê-Ser</p>
+            <p>Administração e Programa Crê-Ser</p>
             <p>{site.address}</p>
             <p>{site.city} — {site.postalCode}</p>
             <p><a href={`tel:${site.phoneLinks[0]}`}>{site.phones[0]}</a></p>

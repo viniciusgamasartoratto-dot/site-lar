@@ -19,7 +19,7 @@ export default function Home() {
       <PublishedContent kind="banner" />
       <section className="section intro-section">
         <div className="container welcome-layout">
-          <figure className="welcome-photo"><img src="/images/recepcao.jpg" alt="Fachada da sede administrativa do Lar Itatibense" width="600" height="400" loading="lazy" /></figure>
+          <figure className="welcome-photo"><img src="/images/recepcao.jpg" alt="Fachada do prédio administrativo do Lar Itatibense" width="600" height="400" loading="lazy" /></figure>
           <div className="welcome-content">
           <div>
             <p className="eyebrow">Sobre o Lar</p>
@@ -81,7 +81,7 @@ export default function Home() {
 
       <section className="section section-soft">
         <div className="container section-heading-row">
-          <div><p className="eyebrow">Nossa sede</p><h2>Conheça nossa sede</h2></div>
+          <div><p className="eyebrow">Nosso espaço</p><h2>Conheça nosso espaço</h2></div>
           <Link className="text-link" href="/estrutura">Conheça toda a estrutura <span aria-hidden="true">→</span></Link>
         </div>
         <div className="container gallery-preview">

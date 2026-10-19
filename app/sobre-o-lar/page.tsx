@@ -10,17 +10,17 @@ export const metadata: Metadata = {
 
 const timeline = [
   { year: "1952", title: "Início das atividades", text: "A instituição iniciou suas atividades em 30 de julho, por iniciativa do então deputado federal Paulo Abreu." },
-  { year: "1988", title: "Intervenção e conclusão da nova sede", text: "Diante das condições precárias da antiga casa, foi nomeado um interventor e acelerada a conclusão das novas instalações no Jardim Carlos Borella." },
-  { year: "1989", title: "Mudança para a sede própria", text: "Em julho, o Lar mudou-se para o novo prédio, finalizado com a participação da comunidade itatibense." },
+  { year: "1988", title: "Intervenção e conclusão do novo prédio", text: "Diante das condições precárias da antiga casa, foi nomeado um interventor e acelerada a conclusão das novas instalações no Jardim Carlos Borella." },
+  { year: "1989", title: "Mudança para o prédio próprio", text: "Em julho, o Lar mudou-se para o novo prédio, finalizado com a participação da comunidade itatibense." },
   { year: "1990", title: "Nova etapa de governança e criação do ECA", text: "A Justiça determinou o fim da intervenção, a eleição da primeira diretoria e a criação de novo Estatuto Social e regras de conduta. No mesmo ano, foi instituído o Estatuto da Criança e do Adolescente (ECA), pela Lei nº 8.069, de 13 de julho de 1990, que estabelece a proteção integral de crianças e adolescentes." },
   { year: "2025", title: "Criação das três casas de acolhimento", text: "Foram criadas as casas Florecer, Gira mundo e Bem-te-vi, com duas unidades em Itatiba e uma em Morungaba, destinadas ao acolhimento de crianças e adolescentes." },
-  { year: "2026", title: "Programa Crê-Ser", text: "O Programa Crê-Ser marca uma nova etapa de cuidado na sede do Lar, com acompanhamento psicossocial de crianças e suas famílias da comunidade itatibense." },
+  { year: "2026", title: "Programa Crê-Ser", text: "O Programa Crê-Ser marca uma nova etapa de cuidado no espaço do Lar, com acompanhamento psicossocial de crianças e suas famílias da comunidade itatibense." },
 ] as const;
 
 export default function AboutPage() {
   return (
     <>
-      <PageHero eyebrow="Sobre o Lar" title="Há mais de sete décadas, uma casa de cuidado e proteção" description="O Lar Itatibense da Criança é uma organização privada, sem fins lucrativos e de utilidade pública, dedicada ao acolhimento institucional de crianças e adolescentes." tone="cream" image={{ src: "/images/sede-jogos.jpeg", alt: "Espaço de jogos da sede do Lar Itatibense" }} />
+      <PageHero eyebrow="Sobre o Lar" title="Há mais de sete décadas, uma casa de cuidado e proteção" description="O Lar Itatibense da Criança é uma organização privada, sem fins lucrativos e de utilidade pública, dedicada ao acolhimento institucional de crianças e adolescentes." tone="cream" image={{ src: "/images/sede-jogos.jpeg", alt: "Espaço de jogos do Lar Itatibense" }} />
 
       <section className="section">
         <div className="container content-grid">
@@ -37,7 +37,7 @@ export default function AboutPage() {
           <div className="prose">
             <h2>Uma instituição que nasceu com a cidade ao seu lado</h2>
             <p>Ao longo da história, o Lar passou por diferentes endereços. Uma de suas sedes ficava à margem do Ribeirão Jacaré e foi severamente atingida por enchentes, mobilizando a população de Itatiba para socorrer as crianças.</p>
-            <p>A sede no Jardim Carlos Borella, construída com apoio comunitário, marcou uma nova etapa da história do Lar. Atualmente, o prédio abriga a administração e o Programa Crê-Ser, sem acolhimento institucional nesse endereço.</p>
+            <p>O prédio no Jardim Carlos Borella, construído com apoio comunitário, marcou uma nova etapa da história do Lar. Atualmente, o prédio abriga a administração e o Programa Crê-Ser, sem acolhimento institucional nesse endereço.</p>
             <p>O acolhimento é realizado em três casas — Florecer, Gira mundo e Bem-te-vi —, sendo duas em Itatiba e uma em Morungaba. Suas localizações são mantidas em sigilo para proteger as crianças e os adolescentes.</p>
             <div className="timeline">
               {timeline.map((item) => <article className="timeline-item" key={item.year}><span className="timeline-year">{item.year}</span><div className="timeline-copy"><h3>{item.title}</h3><p>{item.text}</p></div></article>)}

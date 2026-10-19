@@ -93,7 +93,7 @@ export default function ProgramPage() {
         <div className="container section-heading-row"><div><p className="eyebrow">Alcance territorial</p><h2 id="cre-map-title">A rede de atendimento do Crê-Ser</h2></div></div>
         <div className="container">
           <a className="cre-network-map" href="/images/cre-ser-rede-atendimento-escolar.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar mapa da rede de atendimento escolar do Programa Crê-Ser (abre em nova aba)">
-            <img src="/images/cre-ser-rede-atendimento-escolar.jpg" alt="Mapa da rede de atendimento escolar do Programa Crê-Ser em Itatiba, em 2026, com sede, escolas dos eixos de convivência e terapias especiais e área de cobertura" width="1562" height="1189" loading="lazy" />
+            <img src="/images/cre-ser-rede-atendimento-escolar.jpg" alt="Mapa da rede de atendimento escolar do Programa Crê-Ser em Itatiba, em 2026, com o local de atendimento, escolas dos eixos de convivência e terapias especiais e área de cobertura" width="1562" height="1189" loading="lazy" />
           </a>
           <a className="text-link cre-map-expand" href="/images/cre-ser-rede-atendimento-escolar.jpg" target="_blank" rel="noopener noreferrer">Ampliar mapa <span aria-hidden="true">↗</span></a>
         </div>

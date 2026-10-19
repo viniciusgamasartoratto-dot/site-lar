@@ -51,8 +51,8 @@ export const institutionalFacts = [
 ] as const;
 
 export const structureImages = [
-  { src: "/images/sede-jogos.jpeg", alt: "Espaço da sede com mesas de jogos e mural de animais", title: "Espaço de jogos" },
-  { src: "/images/sede-convivencia.jpeg", alt: "Salão da sede com sofás e mesas de convivência", title: "Espaço de convivência" },
+  { src: "/images/sede-jogos.jpeg", alt: "Espaço do Lar com mesas de jogos e mural de animais", title: "Espaço de jogos" },
+  { src: "/images/sede-convivencia.jpeg", alt: "Salão do Lar com sofás e mesas de convivência", title: "Espaço de convivência" },
 ] as const;
 
 export const partners = [
