@@ -114,15 +114,6 @@ export const transparencyDocuments = [
     source: "local",
   },
   {
-    title: "Certificado Phomenta",
-    category: "Certificado",
-    description: "Certificação institucional Phomenta.",
-    date: "Data não informada",
-    fileMeta: "PDF · 392 KB",
-    href: "/documentos/phomenta.pdf",
-    source: "local",
-  },
-  {
     title: "Estatuto Social",
     category: "Institucional",
     description: "Documento que estabelece as regras de funcionamento e governança da instituição.",
