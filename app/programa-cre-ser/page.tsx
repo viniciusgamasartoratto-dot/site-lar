@@ -86,7 +86,7 @@ export default function ProgramPage() {
 
       <section className="section" id="alcance">
         <div className="container section-heading-row"><div><p className="eyebrow">Nosso alcance · Setembro de 2026</p><h2>Números que mostram a dimensão do cuidado</h2></div><p>Indicadores de atendimento e acompanhamento familiar de setembro de 2026.</p></div>
-        <div className="container cre-indicators">{indicators.map((indicator) => <article key={indicator.label}><strong>{indicator.value}</strong><p>{indicator.label}</p></article>)}</div>
+        <div className="container cre-indicators">{[indicators[0], indicators[2], indicators[3], indicators[4], indicators[1]].map((indicator) => <article key={indicator.label}><strong>{indicator.value}</strong><p>{indicator.label}</p></article>)}</div>
       </section>
 
       <section className="section section-soft" id="rede-de-atendimento" aria-labelledby="cre-map-title">
