@@ -14,7 +14,7 @@ export default function StructurePage() {
       <PageHero eyebrow="Estrutura" className="structure-hero" title={<><span className="structure-title-line">Uma sede de apoio</span><span className="structure-title-line">Três casas de acolhimento</span></>} description="O Lar conta com uma sede administrativa e do Programa Crê-Ser e três casas destinadas ao acolhimento de crianças e adolescentes." tone="cream" image={{ src: "/images/recepcao.jpg", alt: "Fachada da sede administrativa do Lar Itatibense" }} />
       <section className="section">
         <div className="container split-heading">
-          <div><p className="eyebrow">Sede administrativa e Programa Crê-Ser</p><h2>O prédio da sede tem uma nova função</h2></div>
+          <div><p className="eyebrow">Sede administrativa e Programa Crê-Ser</p><h2>O prédio do Lar tem uma nova função</h2></div>
           <div className="lead-copy"><p>O prédio no Jardim Carlos Borella, em Itatiba, abriga atualmente a sede administrativa do Lar e o Programa Crê-Ser.</p><p>O acolhimento passou a ser realizado em três casas: duas em Itatiba e uma em Morungaba.</p></div>
         </div>
       </section>
