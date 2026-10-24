@@ -13,6 +13,12 @@ export default function HelpPage() {
     <>
       <PageHero eyebrow="Como ajudar" title="Encontre seu jeito de ajudar" description="Uma doação ou uma parceria: há diferentes formas de participar do trabalho do Lar." tone="coral" image={{ src: "/images/sobre-maos.jpg", alt: "Mãos reunidas representando cooperação e apoio" }} />
       <section className="section section-soft" id="doar">
+        <div className="container donation-purpose" aria-labelledby="donation-purpose-title">
+          <h2 id="donation-purpose-title">Para onde vai sua doação</h2>
+          <p>Sua contribuição é destinada à manutenção e melhoria dos espaços físicos das casas do Lar e ao desenvolvimento de novos projetos da instituição.</p>
+          <p>Essas doações não se destinam ao custeio da operação do serviço de acolhimento institucional. A garantia desse atendimento é responsabilidade do poder público, com atuação municipal e responsabilidade compartilhada entre as três esferas de governo, conforme o <a href="https://www.planalto.gov.br/ccivil_03/leis/l8069.htm" target="_blank" rel="noopener noreferrer">Estatuto da Criança e do Adolescente</a>.</p>
+          <p>Com seu apoio, podemos conservar nossos espaços e ampliar as iniciativas em benefício de crianças, adolescentes e famílias.</p>
+        </div>
         <div className="container section-heading"><p className="eyebrow">Doação por Pix</p><h2 id="pix-title">Escolha para onde deseja contribuir</h2><p>O Lar e o Programa Crê-Ser terão dados Pix diferentes. Escolha o destino da sua doação antes de realizar o pagamento.</p></div>
         <div className="container pix-destinations" aria-labelledby="pix-title">
           {[
