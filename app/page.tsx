@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBand } from "./components/CtaBand";
+import { InstitutionalAbout } from "./components/InstitutionalAbout";
 import { ProgramHero } from "./components/ProgramHero";
 import { PublishedContent } from "./components/PublishedContent";
 import { HomeCarousel } from "./components/HomeCarousel";
@@ -17,7 +18,7 @@ export default function Home() {
       <HomeCarousel><ProgramHero showProgramLink /></HomeCarousel>
 
       <PublishedContent kind="banner" />
-      <section className="section intro-section">
+      <section className="section intro-section" id="sobre-o-lar">
         <div className="container welcome-layout">
           <figure className="welcome-photo"><img src="/images/recepcao.jpg" alt="Fachada do prédio administrativo do Lar Itatibense" width="600" height="400" loading="lazy" /></figure>
           <div className="welcome-content">
@@ -27,8 +28,8 @@ export default function Home() {
           </div>
           <div className="lead-copy">
             <p>Desde 30 de julho de 1952, o Lar Itatibense da Criança atua no acolhimento institucional de crianças e adolescentes encaminhados pelo Poder Judiciário como medida de proteção.</p>
-            <p>Organização sem fins lucrativos e de utilidade pública, é administrada por uma diretoria com apoio dos conselhos deliberativo e fiscal.</p>
-            <Link className="text-link" href="/sobre-o-lar">Conheça nossa história <span aria-hidden="true">→</span></Link>
+            <p>Organização privada, sem fins lucrativos e de utilidade pública, é administrada por uma diretoria com apoio dos conselhos deliberativo e fiscal.</p>
+            <Link className="text-link" href="#historia-do-lar">Conheça nossa história <span aria-hidden="true">→</span></Link>
           </div>
         </div>
         </div>
@@ -43,6 +44,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <InstitutionalAbout />
 
       <section className="section program-feature">
         <div className="container program-feature-shell">

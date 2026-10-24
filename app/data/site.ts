@@ -11,7 +11,6 @@ export const site = {
 
 export const navigation = [
   { href: "/", label: "Início" },
-  { href: "/sobre-o-lar", label: "Sobre o Lar" },
   { href: "/programa-cre-ser", label: "Programa Crê-Ser", featured: false },
   { href: "/estrutura", label: "Estrutura" },
   { href: "/salao", label: "Salão de eventos" },

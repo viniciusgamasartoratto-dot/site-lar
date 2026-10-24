@@ -8,7 +8,6 @@ register("./cloudflare-test-loader.mjs", import.meta.url);
 const root = new URL("../", import.meta.url);
 const routes = [
   "/",
-  "/sobre-o-lar",
   "/programa-cre-ser",
   "/estrutura",
   "/como-ajudar",
@@ -101,4 +100,14 @@ test("shows the directors with official photos and simplifies the home facts", a
   assert.match(home, /Nossa história/);
   assert.match(home, /Quem acolhemos/);
   assert.doesNotMatch(home, /vagas de capacidade estrutural/i);
+});
+
+
+test("integrates institutional history on home and redirects the former page", async () => {
+  const home = await (await render("/")).text();
+  for (const text of ["historia-do-lar", "Missão", "Administração e governança", "1952", "1988", "1989", "1990", "2025", "2026"]) assert.ok(home.includes(text), text);
+  assert.doesNotMatch(home, /href="\/sobre-o-lar"/);
+  const previous = await render("/sobre-o-lar");
+  assert.equal(previous.status, 308);
+  assert.equal(new URL(previous.headers.get("location"), "http://localhost").href, "http://localhost/#sobre-o-lar");
 });

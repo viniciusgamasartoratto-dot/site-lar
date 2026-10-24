@@ -9,7 +9,6 @@ const output = resolve(root, "pages-dist");
 const repositoryPath = "/site-lar";
 const routes = [
   "/",
-  "/sobre-o-lar",
   "/programa-cre-ser",
   "/estrutura",
   "/como-ajudar",
@@ -60,6 +59,10 @@ for (const pathname of routes) {
   await mkdir(dirname(destination), { recursive: true });
   await writeFile(destination, rewriteHtml(await response.text()));
 }
+
+// Preserve old bookmarks while keeping the institutional content on the home page.
+await mkdir(resolve(output, "sobre-o-lar"), { recursive: true });
+await writeFile(resolve(output, "sobre-o-lar/index.html"), `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="0;url=${repositoryPath}/#sobre-o-lar"><link rel="canonical" href="https://viniciusgamasartoratto-dot.github.io${repositoryPath}/"><title>Sobre o Lar — Página inicial</title></head><body><p>As informações sobre o Lar estão na página inicial.</p><a href="${repositoryPath}/#sobre-o-lar">Conhecer o Lar</a></body></html>`);
 
 await writeFile(resolve(output, ".nojekyll"), "");
 await writeFile(resolve(output, "404.html"), rewriteHtml(await (await worker.fetch(

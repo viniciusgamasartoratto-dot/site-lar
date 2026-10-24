@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const routes = ["", "/sobre-o-lar", "/programa-cre-ser", "/estrutura", "/como-ajudar", "/parceiros", "/diretoria", "/transparencia", "/contato"];
+const routes = ["", "/programa-cre-ser", "/estrutura", "/como-ajudar", "/parceiros", "/diretoria", "/transparencia", "/contato"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL || "https://lar-itatibense-da-crianca.viniciusgamasartorat.chatgpt.site";
