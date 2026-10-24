@@ -16,8 +16,8 @@ export default function HelpPage() {
         <div className="container section-heading"><p className="eyebrow">Doação por Pix</p><h2 id="pix-title">Escolha para onde deseja contribuir</h2><p>O Lar e o Programa Crê-Ser terão dados Pix diferentes. Escolha o destino da sua doação antes de realizar o pagamento.</p></div>
         <div className="container pix-destinations" aria-labelledby="pix-title">
           {[
-            { id: "lar", title: "Pix para o Lar", description: "Apoie o trabalho do Lar Itatibense da Criança", contact: "/#fale-com-o-lar" },
-            { id: "cre-ser", title: "Pix para o Crê-Ser", description: "Contribua com as atividades do Programa Crê-Ser", contact: "/programa-cre-ser#contato-cre-ser" },
+            { id: "lar", title: "Pix para o Lar", description: "Apoie o trabalho do Lar Itatibense da Criança" },
+            { id: "cre-ser", title: "Pix para o Crê-Ser", description: "Contribua com as atividades do Programa Crê-Ser" },
           ].map(destination => (
             <article className="pix-panel pix-destination" id={`pix-${destination.id}`} key={destination.id} aria-labelledby={`pix-${destination.id}-title`}>
               <h3 id={`pix-${destination.id}-title`}>{destination.title}</h3>
@@ -27,7 +27,7 @@ export default function HelpPage() {
               <input id={`pix-code-${destination.id}`} type="text" value="Aguardando o código Pix oficial" readOnly disabled />
               <button className="button button-green" type="button" disabled aria-describedby={`pix-pending-${destination.id}`}>Copiar Pix do {destination.id === "lar" ? "Lar" : "Crê-Ser"}</button>
               <p id={`pix-pending-${destination.id}`} className="pix-pending">Disponível após a inclusão dos dados oficiais.</p>
-              <Link className="text-link" href={destination.contact}>Falar sobre esta doação →</Link>
+
             </article>
           ))}
         </div>
