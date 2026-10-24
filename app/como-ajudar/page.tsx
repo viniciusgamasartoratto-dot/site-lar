@@ -38,8 +38,7 @@ export default function HelpPage() {
           ))}
         </div>
         <div className="container pix-guidance"><p>Quando os dados estiverem disponíveis, use o QR Code ou o Pix Copia e Cola do destino escolhido no aplicativo do seu banco. Antes de confirmar, confira o beneficiário e o valor da doação.</p></div>
-        <div className="container cards-2 donation-options">
-          <article className="info-card"><p className="eyebrow">Doação financeira</p><h2>Quero doar</h2><p>Solicite os dados para doação por telefone ou e-mail.</p><Link className="button button-green" href="/#fale-com-o-lar">Pedir dados para doação</Link></article>
+        <div className="container donation-options">
           <article className="info-card" id="parcerias"><p className="eyebrow">Empresas e profissionais</p><h2>Quero construir uma parceria</h2><p>Empresas e profissionais podem apoiar com recursos, serviços ou conhecimento, conforme alinhamento institucional.</p><Link className="button button-green" href="/#fale-com-o-lar">Quero ser parceiro</Link></article>
         </div>
       </section>
