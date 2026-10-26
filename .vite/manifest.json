@@ -30,18 +30,8 @@
       "_framework-CXnKph_e.js"
     ]
   },
-  "app/components/HomeCarousel.tsx": {
-    "file": "assets/HomeCarousel-DxX8OEEp.js",
-    "name": "HomeCarousel",
-    "src": "app/components/HomeCarousel.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "_framework-CXnKph_e.js"
-    ]
-  },
   "app/components/PublishedContent.tsx": {
-    "file": "assets/PublishedContent-BABZGe2z.js",
+    "file": "assets/PublishedContent-CYX-XZaO.js",
     "name": "PublishedContent",
     "src": "app/components/PublishedContent.tsx",
     "isDynamicEntry": true,
@@ -51,7 +41,7 @@
     ]
   },
   "app/components/SiteHeader.tsx": {
-    "file": "assets/SiteHeader-GKygb-aX.js",
+    "file": "assets/SiteHeader-BJwInm1b.js",
     "name": "SiteHeader",
     "src": "app/components/SiteHeader.tsx",
     "isDynamicEntry": true,
@@ -63,7 +53,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-uJ1piQ1V.js",
+    "file": "assets/layout-segment-context-CBfSfR9c.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -74,7 +64,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/link.js": {
-    "file": "assets/link-BkNpclbS.js",
+    "file": "assets/link-yurCarNa.js",
     "name": "link",
     "src": "node_modules/vinext/dist/shims/link.js",
     "isDynamicEntry": true,
@@ -88,7 +78,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/router.js": {
-    "file": "assets/router-qbenOpy6.js",
+    "file": "assets/router-Blq0_-gL.js",
     "name": "router",
     "src": "node_modules/vinext/dist/shims/router.js",
     "isDynamicEntry": true,
@@ -103,7 +93,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-B8aG37CG.js",
+    "file": "assets/index-HZnCXE-e.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -117,7 +107,6 @@
       "app/components/SiteHeader.tsx",
       "app/admin/login.tsx",
       "virtual:vinext-app-browser-entry",
-      "app/components/HomeCarousel.tsx",
       "app/admin/panel.tsx",
       "node_modules/vinext/dist/shims/link.js"
     ]
