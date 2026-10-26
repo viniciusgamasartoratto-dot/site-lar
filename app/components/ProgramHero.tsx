@@ -3,6 +3,7 @@ import { ProgramHeroPhotos } from "./ProgramHeroPhotos";
 import { programIndicators as indicators } from "../data/program";
 
 export function ProgramHero({ showProgramLink = false }: { showProgramLink?: boolean }) {
+  const Heading = showProgramLink ? "h2" : "h1";
   return (
       <section className="page-hero page-hero-green cre-program-hero" aria-labelledby="cre-hero-title">
         <ProgramHeroPhotos />
@@ -11,7 +12,7 @@ export function ProgramHero({ showProgramLink = false }: { showProgramLink?: boo
           <div className="cre-hero-heading">
             <div>
               <p className="eyebrow">Programa Crê-Ser</p>
-              <h1 id="cre-hero-title">Cuidar, fortalecer vínculos e ampliar possibilidades</h1>
+              <Heading id="cre-hero-title">Cuidar, fortalecer vínculos e ampliar possibilidades</Heading>
               <p className="hero-description">Uma frente preventiva e comunitária do Lar Itatibense da Criança que integra educação, saúde, cultura e apoio às famílias.</p>
             </div>
             <div className="cre-hero-symbol"><img src="/images/cre-ser-logo.png" alt="Símbolo do Programa Crê-Ser" width="520" height="520" fetchPriority="high" /></div>

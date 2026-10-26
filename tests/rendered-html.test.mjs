@@ -60,8 +60,9 @@ test("keeps the program prominent and exclusive", async () => {
 test("contains no retired content or starter preview", async () => {
   const files = await sourceFiles(new URL("../app/", import.meta.url));
   const source = (await Promise.all(files.map((file) => readFile(file, "utf8")))).join("\n");
-  const retired = /Voltei e Agora|Grupo de Orientação de Pais|EnLaço|Dindos do Lar|Parceiros da Infância|Projeto Crê-Ser|\bProjetos\b/i;
+  const retired = /Voltei e Agora|Grupo de Orientação de Pais|EnLaço|Dindos do Lar|Parceiros da Infância|Projeto Crê-Ser/i;
   assert.doesNotMatch(source, retired);
+  assert.doesNotMatch(source, /label: "Projetos"/);
   assert.doesNotMatch(source, /codex-preview|SkeletonPreview|Lorem ipsum/i);
   const packageJson = await readFile(new URL("../package.json", import.meta.url), "utf8");
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);

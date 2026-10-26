@@ -32,7 +32,7 @@ function pageUrl(pathname) {
 
 function rewriteHtml(html) {
   return html
-    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, tag => tag.includes('src="/scripts/associate-form.js"') && tag.includes('data-associate-form="true"') ? tag : "")
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, tag => ((tag.includes('src="/scripts/associate-form.js"') && tag.includes('data-associate-form="true"')) || (tag.includes('src="/scripts/home-carousel.js"') && tag.includes('data-home-carousel-script="true"'))) ? tag : "")
     .replace(/<link\b[^>]*rel=["']modulepreload["'][^>]*>/gi, "")
     .replace(/\b(href|src)="\/([^\"]*)"/g, (match, attribute, target) => {
       if (!target) return `${attribute}="${repositoryPath}/"`;
