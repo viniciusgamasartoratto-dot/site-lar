@@ -12,7 +12,6 @@ export function HomeCarousel({ children }: { children: ReactNode }) {
       </div>
       <div className="home-carousel-slide" role="group" aria-roledescription="slide" aria-label="2 de 2: Programa Crê-Ser" aria-hidden="true" inert>{children}</div>
     </div>
-    <div className="home-carousel-controls"><div className="home-carousel-pages" aria-label="Escolher banner"><button type="button" data-slide="0" aria-label="Mostrar banner do Lar" aria-current="true"><span /></button><button type="button" data-slide="1" aria-label="Mostrar banner do Crê-Ser"><span /></button></div><button type="button" data-carousel-pause>Pausar banners</button></div>
     <script src="/scripts/home-carousel.js" defer data-home-carousel-script="true" />
   </section>;
 }
