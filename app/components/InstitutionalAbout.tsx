@@ -5,8 +5,9 @@ const timeline = [
   { year: "1988", title: "Intervenção e conclusão do novo prédio", text: "Diante das condições precárias da antiga casa, foi nomeado um interventor e acelerada a conclusão das novas instalações no Jardim Carlos Borella." },
   { year: "1989", title: "Mudança para o prédio próprio", text: "Em julho, o Lar mudou-se para o novo prédio, finalizado com a participação da comunidade itatibense." },
   { year: "1990", title: "Nova etapa de governança e criação do ECA", text: "A Justiça determinou o fim da intervenção, a eleição da primeira diretoria e a criação de novo Estatuto Social e regras de conduta. No mesmo ano, foi instituído o Estatuto da Criança e do Adolescente (ECA), pela Lei nº 8.069, de 13 de julho de 1990, que estabelece a proteção integral de crianças e adolescentes." },
+  { year: "2017", title: "Início do Crê-Ser", text: "O Crê-Ser iniciou suas atividades com a oferta exclusiva de atendimentos psicológicos." },
   { year: "2025", title: "Criação das três casas de acolhimento", text: "Foram criadas as casas Florecer, Gira mundo e Bem-te-vi, com duas unidades em Itatiba e uma em Morungaba, destinadas ao acolhimento de crianças e adolescentes." },
-  { year: "2026", title: "Programa Crê-Ser", text: "O Programa Crê-Ser marca uma nova etapa de cuidado no espaço do Lar, com acompanhamento psicossocial de crianças e suas famílias da comunidade itatibense." },
+  { year: "2026", title: "Consolidação do Crê-Ser com as oficinas", text: "O Programa Crê-Ser se consolidou com a inclusão das oficinas, ampliando sua atuação para além dos atendimentos psicológicos." },
 ] as const;
 
 export function InstitutionalAbout() {
