@@ -19,25 +19,24 @@ export default function HelpPage() {
           <p>Essas doações não se destinam ao custeio da operação do serviço de acolhimento institucional. A garantia desse atendimento é responsabilidade do poder público, com atuação municipal e responsabilidade compartilhada entre as três esferas de governo, conforme o <a href="https://www.planalto.gov.br/ccivil_03/leis/l8069.htm" target="_blank" rel="noopener noreferrer">Estatuto da Criança e do Adolescente</a>.</p>
           <p>Com seu apoio, podemos conservar nossos espaços e ampliar as iniciativas em benefício de crianças, adolescentes e famílias.</p>
         </div>
-        <div className="container section-heading"><p className="eyebrow">Doação por Pix</p><h2 id="pix-title">Escolha para onde deseja contribuir</h2><p>O Lar e o Programa Crê-Ser terão dados Pix diferentes. Escolha o destino da sua doação antes de realizar o pagamento.</p></div>
+        <div className="container section-heading"><p className="eyebrow">Doação por Pix</p><h2 id="pix-title">Contribua com o Lar</h2><p>Apoie o trabalho do Lar Itatibense da Criança com uma doação por Pix.</p></div>
         <div className="container pix-destinations" aria-labelledby="pix-title">
           {[
             { id: "lar", title: "Pix para o Lar", description: "Apoie o trabalho do Lar Itatibense da Criança" },
-            { id: "cre-ser", title: "Pix para o Crê-Ser", description: "Contribua com as atividades do Programa Crê-Ser" },
           ].map(destination => (
             <article className="pix-panel pix-destination" id={`pix-${destination.id}`} key={destination.id} aria-labelledby={`pix-${destination.id}-title`}>
               <h3 id={`pix-${destination.id}-title`}>{destination.title}</h3>
               <p className="pix-destination-description">{destination.description}</p>
-              <div className="pix-awaiting"><strong>Dados Pix em preparação</strong><p>O QR Code e o código Pix deste destino serão disponibilizados aqui.</p></div>
+              <div className="pix-awaiting"><strong>Dados Pix em preparação</strong><p>O QR Code e o código Pix do Lar serão disponibilizados aqui.</p></div>
               <label htmlFor={`pix-code-${destination.id}`}>Pix Copia e Cola</label>
               <input id={`pix-code-${destination.id}`} type="text" value="Aguardando o código Pix oficial" readOnly disabled />
-              <button className="button button-green" type="button" disabled aria-describedby={`pix-pending-${destination.id}`}>Copiar Pix do {destination.id === "lar" ? "Lar" : "Crê-Ser"}</button>
+              <button className="button button-green" type="button" disabled aria-describedby={`pix-pending-${destination.id}`}>Copiar Pix do Lar</button>
               <p id={`pix-pending-${destination.id}`} className="pix-pending">Disponível após a inclusão dos dados oficiais.</p>
 
             </article>
           ))}
         </div>
-        <div className="container pix-guidance"><p>Quando os dados estiverem disponíveis, use o QR Code ou o Pix Copia e Cola do destino escolhido no aplicativo do seu banco. Antes de confirmar, confira o beneficiário e o valor da doação.</p></div>
+        <div className="container pix-guidance"><p>Quando os dados estiverem disponíveis, use o QR Code ou o Pix Copia e Cola do Lar no aplicativo do seu banco. Antes de confirmar, confira o beneficiário e o valor da doação.</p></div>
         <div className="container donation-options">
           <article className="info-card" id="parcerias"><p className="eyebrow">Empresas e profissionais</p><h2>Quero construir uma parceria</h2><p>Empresas e profissionais podem apoiar com recursos, serviços ou conhecimento, conforme alinhamento institucional.</p><Link className="button button-green" href="/#fale-com-o-lar">Quero ser parceiro</Link></article>
         </div>
