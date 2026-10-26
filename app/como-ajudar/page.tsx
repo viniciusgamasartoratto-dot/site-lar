@@ -15,7 +15,7 @@ export default function HelpPage() {
       <section className="section section-soft" id="doar">
         <div className="container donation-purpose" aria-labelledby="donation-purpose-title">
           <h2 id="donation-purpose-title">Para onde vai sua doação</h2>
-          <p>Sua contribuição é destinada à manutenção e melhoria dos espaços físicos das casas do Lar e ao desenvolvimento de novos projetos da instituição.</p>
+          <p>Sua contribuição é destinada à manutenção e melhoria dos espaços físicos das casas do Lar, à manutenção da estrutura administrativa e ao desenvolvimento de novos projetos da instituição.</p>
           <p>Essas doações não se destinam ao custeio da operação do serviço de acolhimento institucional. A garantia desse atendimento é responsabilidade do poder público, com atuação municipal e responsabilidade compartilhada entre as três esferas de governo, conforme o <a href="https://www.planalto.gov.br/ccivil_03/leis/l8069.htm" target="_blank" rel="noopener noreferrer">Estatuto da Criança e do Adolescente</a>.</p>
           <p>Com seu apoio, podemos conservar nossos espaços e ampliar as iniciativas em benefício de crianças, adolescentes e famílias.</p>
         </div>
