@@ -22,7 +22,7 @@ const faqs = [
   { question: "Como é definido o ingresso?", answer: "A equipe avalia a vulnerabilidade social, a modalidade de atendimento, a disponibilidade de vagas e a adesão da família. A avaliação pode resultar em ingresso, lista de espera ou encaminhamento a outro serviço da rede." },
   { question: "Os atendimentos são em grupo ou individuais?", answer: "O atendimento grupal é o formato predominante. A equipe técnica avalia idade, necessidades e contexto de cada criança ou adolescente para definir a modalidade adequada." },
   { question: "O Crê-Ser é o serviço de acolhimento do Lar?", answer: "O Crê-Ser é uma iniciativa preventiva e comunitária do Lar, distinta do Serviço de Acolhimento Institucional para Crianças e Adolescentes (SAICA). Seu trabalho busca fortalecer vínculos e prevenir situações que possam levar ao acolhimento." },
-  { question: "Como confirmar horários e vagas?", answer: "Entre em contato pelo telefone (11) 4534-2416 ou pelo e-mail projetocreser@laritatibense.org.br." },
+  { question: "Como confirmar horários e vagas?", answer: "Entre em contato pelo e-mail projetocreser@laritatibense.org.br." },
 ];
 
 export default function ProgramPage() {
@@ -120,7 +120,7 @@ export default function ProgramPage() {
       </section>
 
       <section className="section cre-contact-section" id="contato-cre-ser">
-        <div className="container cre-contact-panel"><div><p className="eyebrow">Fale com o Crê-Ser</p><h2>Uma conversa pode abrir novos caminhos</h2><p>Para procurar atendimento, esclarecer o encaminhamento ou construir uma parceria, entre em contato com a equipe do programa.</p></div><div className="cre-contact-links"><a className="button button-green" href="tel:+551145342416">(11) 4534-2416</a><a href="mailto:projetocreser@laritatibense.org.br">projetocreser@laritatibense.org.br</a><Link className="text-link" href="/como-ajudar">Conheça outras formas de apoiar →</Link></div></div>
+        <div className="container cre-contact-panel"><div><p className="eyebrow">Fale com o Crê-Ser</p><h2>Uma conversa pode abrir novos caminhos</h2><p>Para procurar atendimento, esclarecer o encaminhamento ou construir uma parceria, entre em contato com a equipe do programa.</p></div><div className="cre-contact-links"><a href="mailto:projetocreser@laritatibense.org.br">projetocreser@laritatibense.org.br</a><Link className="text-link" href="/como-ajudar">Conheça outras formas de apoiar →</Link></div></div>
       </section>
     </>
   );

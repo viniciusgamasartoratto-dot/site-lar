@@ -53,7 +53,6 @@ export function SiteFooter() {
             <p>{site.address}</p>
             <p>{site.city} — {site.postalCode}</p>
             <p><a href={`tel:${site.phoneLinks[0]}`}>{site.phones[0]}</a></p>
-            <p><a href={`tel:${site.phoneLinks[1]}`}>{site.phones[1]}</a></p>
             <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
           </address>
         </div>
