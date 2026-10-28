@@ -42,6 +42,33 @@ export default function HelpPage() {
         </div>
       </section>
 
+      <section className="section nfp-section" id="nota-fiscal-paulista" aria-labelledby="nfp-title">
+        <div className="container section-heading"><p className="eyebrow">Nota Fiscal Paulista</p><h2 id="nfp-title">Suas notas fiscais também podem ajudar o Lar</h2><p>Escolha a doação automática das notas com seu CPF ou cadastre individualmente notas sem CPF.</p></div>
+        <div className="container nfp-entity"><strong>Lar Itatibense da Criança</strong><span>CNPJ: 50.119.288/0001-96</span><p>Use estes dados para localizar e conferir a entidade no sistema.</p></div>
+        <div className="container cards-2 nfp-guides">
+          <article className="info-card"><p className="eyebrow">Com seu CPF</p><h3>Ative a doação automática</h3>
+            <ol className="nfp-steps">
+              <li>Acesse o sistema da Nota Fiscal Paulista como consumidor. Se ainda não tiver cadastro, faça sua inscrição no portal oficial.</li>
+              <li>Em <strong>Entidades</strong>, escolha <strong>Doação de Cupons com CPF (automática)</strong>.</li>
+              <li>Leia as condições de início e validade. Clique em pesquisar e informe o CNPJ do Lar: <strong>50.119.288/0001-96</strong>.</li>
+              <li>Confira o nome da instituição, selecione o Lar e avance. Confirme a doação automática e aguarde a mensagem de registro.</li>
+              <li>Nas próximas compras, peça a nota com <strong>seu próprio CPF</strong>. Conforme a vigência cadastrada, os créditos gerados serão destinados à entidade selecionada.</li>
+            </ol>
+            <a className="text-link" href="https://portal.fazenda.sp.gov.br/servicos/nfp/Paginas/Guia-doacao_automatica.aspx" target="_blank" rel="noopener noreferrer">Ver guia oficial da doação automática ↗</a>
+          </article>
+          <article className="info-card"><p className="eyebrow">Sem CPF na nota</p><h3>Cadastre uma nota para doar</h3>
+            <ol className="nfp-steps">
+              <li>Tenha em mãos uma nota ou cupom fiscal emitido <strong>sem CPF</strong>.</li>
+              <li>Entre no sistema como consumidor e, em <strong>Entidades</strong>, escolha <strong>Doação de cupom fiscal sem CPF</strong>.</li>
+              <li>Selecione o tipo correto de documento e preencha os dados solicitados. Para NFC-e e CF-e-SAT, utilize a chave de acesso de <strong>44 números</strong>.</li>
+              <li>Selecione o <strong>Lar Itatibense da Criança</strong>, conferindo o CNPJ <strong>50.119.288/0001-96</strong>, e conclua o registro seguindo as instruções do sistema.</li>
+            </ol>
+            <a className="text-link" href="https://portal.fazenda.sp.gov.br/servicos/nfp/Paginas/Guia-doacao_manual.aspx" target="_blank" rel="noopener noreferrer">Ver guia oficial do cadastro de notas ↗</a>
+          </article>
+        </div>
+        <div className="container nfp-action"><p>Na compra, não informe o CNPJ do Lar. Ele é usado apenas para selecionar a entidade no sistema de doação.</p><a className="button button-green" href="https://www.nfp.fazenda.sp.gov.br/" target="_blank" rel="noopener noreferrer">Acessar a Nota Fiscal Paulista ↗</a></div>
+      </section>
+
 <AssociateForm />
 <section className="section">
         <div className="container transparency-card">
