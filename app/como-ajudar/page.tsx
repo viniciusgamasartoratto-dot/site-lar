@@ -15,9 +15,9 @@ export default function HelpPage() {
       <section className="section section-soft" id="doar">
         <div className="container donation-purpose" aria-labelledby="donation-purpose-title">
           <h2 id="donation-purpose-title">Para onde vai sua doação</h2>
-          <p>Sua contribuição ajuda a custear o pagamento dos funcionários da área administrativa do Lar e o desenvolvimento de novos projetos da instituição.</p>
+          <p>Sua contribuição apoia o desenvolvimento de novos projetos do Lar.</p>
           <p>Essas doações não se destinam ao custeio da operação do serviço de acolhimento institucional. A garantia desse atendimento é responsabilidade do poder público, com atuação municipal e responsabilidade compartilhada entre as três esferas de governo, conforme o <a href="https://www.planalto.gov.br/ccivil_03/leis/l8069.htm" target="_blank" rel="noopener noreferrer">Estatuto da Criança e do Adolescente</a>.</p>
-          <p>Com seu apoio, podemos manter o trabalho da equipe administrativa e ampliar as iniciativas em benefício de crianças, adolescentes e famílias.</p>
+          <p>Com seu apoio, podemos ampliar as iniciativas em benefício de crianças, adolescentes e famílias.</p>
         </div>
         <div className="container section-heading"><p className="eyebrow">Doação por Pix</p><h2 id="pix-title">Contribua com o Lar</h2><p>Apoie o trabalho do Lar Itatibense da Criança com uma doação por Pix.</p></div>
         <div className="container pix-destinations" aria-labelledby="pix-title">
