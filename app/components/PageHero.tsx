@@ -6,11 +6,12 @@ type PageHeroProps = {
   className?: string;
   title: import("react").ReactNode;
   description: string;
+  children?: import("react").ReactNode;
   tone?: "green" | "coral" | "cream";
   image?: { src: string; alt: string };
 };
 
-export function PageHero({ eyebrow, title, description, tone = "green", image, className }: PageHeroProps) {
+export function PageHero({ eyebrow, title, description, tone = "green", image, className, children }: PageHeroProps) {
   return (
     <section className={`page-hero page-hero-${tone}${className ? " " + className : ""}`}>
       <div className={`container page-hero-grid${image ? " has-image" : ""}`}>
@@ -22,6 +23,7 @@ export function PageHero({ eyebrow, title, description, tone = "green", image, c
           <p className="eyebrow">{eyebrow}</p>
           <h1>{title}</h1>
           <p className="hero-description">{description}</p>
+          {children}
         </div>
         {image && (
           <div className="page-hero-image">

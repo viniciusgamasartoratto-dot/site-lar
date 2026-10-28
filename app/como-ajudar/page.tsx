@@ -11,14 +11,19 @@ export const metadata: Metadata = {
 export default function HelpPage() {
   return (
     <>
-      <PageHero eyebrow="Como ajudar" title="Encontre seu jeito de ajudar" description="Uma doação ou uma parceria: há diferentes formas de participar do trabalho do Lar." tone="coral" image={{ src: "/images/sobre-maos.jpg", alt: "Mãos reunidas representando cooperação e apoio" }} />
-      <section className="section section-soft" id="doar">
-        <div className="container donation-purpose" aria-labelledby="donation-purpose-title">
-          <h2 id="donation-purpose-title">Para onde vai sua doação</h2>
-          <p>Sua contribuição apoia o desenvolvimento de novos projetos do Lar.</p>
+      <PageHero eyebrow="Como ajudar" title="Para onde vai sua doação" description="Sua contribuição apoia o desenvolvimento de novos projetos do Lar." tone="coral" className="help-donation-hero" image={{ src: "/images/sobre-maos.jpg", alt: "Mãos reunidas representando cooperação e apoio" }}>
+        <div className="help-donation-copy">
           <p>Essas doações não se destinam ao custeio da operação do serviço de acolhimento institucional. A garantia desse atendimento é responsabilidade do poder público, com atuação municipal e responsabilidade compartilhada entre as três esferas de governo, conforme o <a href="https://www.planalto.gov.br/ccivil_03/leis/l8069.htm" target="_blank" rel="noopener noreferrer">Estatuto da Criança e do Adolescente</a>.</p>
           <p>Com seu apoio, podemos ampliar as iniciativas em benefício de crianças, adolescentes e famílias.</p>
         </div>
+        <nav className="button-row help-donation-actions" aria-label="Formas de contribuir">
+          <Link className="button button-coral" href="#doar">Doar por Pix</Link>
+          <Link className="button button-outline" href="#nota-fiscal-paulista">Nota Fiscal Paulista</Link>
+          <Link className="button button-outline" href="#ficha-de-associado">Seja associado</Link>
+          <Link className="button button-outline" href="#parcerias">Seja parceiro</Link>
+        </nav>
+      </PageHero>
+      <section className="section section-soft" id="doar">
         <div className="container section-heading"><p className="eyebrow">Doação por Pix</p><h2 id="pix-title">Contribua com o Lar</h2><p>Apoie o trabalho do Lar Itatibense da Criança com uma doação por Pix.</p></div>
         <div className="container pix-destinations" aria-labelledby="pix-title">
           {[
