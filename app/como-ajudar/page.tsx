@@ -13,7 +13,6 @@ export default function HelpPage() {
     <>
       <PageHero eyebrow="Como ajudar" title="Para onde vai sua doação" description="Sua contribuição apoia o desenvolvimento de novos projetos do Lar." tone="coral" className="help-donation-hero" image={{ src: "/images/sobre-maos.jpg", alt: "Mãos reunidas representando cooperação e apoio" }}>
         <div className="help-donation-copy">
-          <p>Essas doações não se destinam ao custeio da operação do serviço de acolhimento institucional. A garantia desse atendimento é responsabilidade do poder público, com atuação municipal e responsabilidade compartilhada entre as três esferas de governo, conforme o <a href="https://www.planalto.gov.br/ccivil_03/leis/l8069.htm" target="_blank" rel="noopener noreferrer">Estatuto da Criança e do Adolescente</a>.</p>
           <p>Com seu apoio, podemos ampliar as iniciativas em benefício de crianças, adolescentes e famílias.</p>
         </div>
         <nav className="button-row help-donation-actions" aria-label="Formas de contribuir">
