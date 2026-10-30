@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function HelpPage() {
   return (
     <>
-      <PageHero eyebrow="Como ajudar" title="Para onde vai sua doação" description="Sua contribuição apoia o desenvolvimento de novos projetos do Lar." tone="coral" className="help-donation-hero" image={{ src: "/images/sobre-maos.jpg", alt: "Mãos reunidas representando cooperação e apoio" }}>
+      <PageHero eyebrow="Como ajudar" title="Para onde vai sua doação" description="Sua contribuição apoia a continuidade dos projetos e programas atuais do Lar e o desenvolvimento de novas iniciativas." tone="coral" className="help-donation-hero" image={{ src: "/images/sobre-maos.jpg", alt: "Mãos reunidas representando cooperação e apoio" }}>
         <div className="help-donation-copy">
           <p>Com seu apoio, podemos ampliar as iniciativas em benefício de crianças, adolescentes e famílias.</p>
         </div>
